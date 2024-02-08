@@ -1,1 +1,39 @@
 ﻿  1>Checking Build System
+  CMake is re-running because E:/jpeg_VS2022/build/simd/CMakeFiles/generate.stamp is out-of-date.
+    the file 'E:/jpeg_VS2022/build/CMakeFiles/3.28.3/CMakeASM_NASMCompiler.cmake'
+    is newer than 'E:/jpeg_VS2022/build/simd/CMakeFiles/generate.stamp.depend'
+    result='-1'
+  -- Selecting Windows SDK version 10.0.22621.0 to target Windows 10.0.19045.
+  -- CMAKE_BUILD_TYPE = Release
+  -- VERSION = 3.0.3, BUILD = 20240208
+  -- 64-bit build (x86_64)
+  -- CMAKE_INSTALL_PREFIX = E:/jpeg_VS2022/package
+  -- CMAKE_INSTALL_BINDIR = bin (E:/jpeg_VS2022/package/bin)
+  -- CMAKE_INSTALL_DATAROOTDIR = share (E:/jpeg_VS2022/package/share)
+  -- CMAKE_INSTALL_DOCDIR = share/doc/libjpeg-turbo (E:/jpeg_VS2022/package/share/doc/libjpeg-turbo)
+  -- CMAKE_INSTALL_INCLUDEDIR = include (E:/jpeg_VS2022/package/include)
+  -- CMAKE_INSTALL_LIBDIR = lib (E:/jpeg_VS2022/package/lib)
+  -- Shared libraries enabled (ENABLE_SHARED = 1)
+  -- Static libraries enabled (ENABLE_STATIC = 1)
+  -- Arithmetic decoding support enabled (WITH_ARITH_DEC = 1)
+  -- Arithmetic encoding support enabled (WITH_ARITH_ENC = 1)
+  -- TurboJPEG API library enabled (WITH_TURBOJPEG = 1)
+  -- TurboJPEG Java wrapper disabled (WITH_JAVA = 0)
+  -- Emulating libjpeg API/ABI v6.2 (WITH_JPEG7 = 0, WITH_JPEG8 = 0)
+  -- libjpeg API shared library version = 62.4.0
+  -- Visual C++ run-time library: MultiThreaded (WITH_CRT_DLL = 0)
+  -- Compiler flags = /DWIN32 /D_WINDOWS /O2 /Ob2 /DNDEBUG
+  -- Linker flags = /machine:x64 /INCREMENTAL:NO
+  -- INLINE = __forceinline (FORCE_INLINE = 1)
+  -- THREAD_LOCAL = __declspec(thread)
+  -- CMAKE_EXECUTABLE_SUFFIX = .exe
+  -- CMAKE_ASM_NASM_COMPILER = D:/NASM/nasm.exe
+  -- CMAKE_ASM_NASM_OBJECT_FORMAT = win64
+  -- CMAKE_ASM_NASM_FLAGS =  -DWIN64 -D__x86_64__ 
+  -- SIMD extensions: x86_64 (WITH_SIMD = 1)
+  -- Visual C++ run-time library for libjpeg API DLL: MultiThreadedDLL
+  -- FLOATTEST8 = sse
+  -- FLOATTEST12 = no-fp-contract
+  -- Configuring done (0.1s)
+  -- Generating done (0.4s)
+  -- Build files have been written to: E:/jpeg_VS2022/build

@@ -1,6 +1,1 @@
-﻿  Building Custom Rule E:/jpeg_VS2022/CMakeLists.txt
-  rdcolmap.c
-  wrgif.c
-  wrppm.c
-  正在生成代码...
-  djpeg12-static.vcxproj -> E:\jpeg_VS2022\build\djpeg12-static.dir\Debug\djpeg12-static.lib
+﻿  djpeg12-static.vcxproj -> E:\jpeg_VS2022\build\djpeg12-static.dir\Debug\djpeg12-static.lib

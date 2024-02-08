@@ -1,18 +1,1 @@
-﻿  Building Custom Rule E:/jpeg_VS2022/CMakeLists.txt
-  jcapistd.c
-  jccolor.c
-  jcdiffct.c
-  jclossls.c
-  jcmainct.c
-  jcprepct.c
-  jcsample.c
-  jdapistd.c
-  jdcolor.c
-  jddiffct.c
-  jdlossls.c
-  jdmainct.c
-  jdpostct.c
-  jdsample.c
-  jutils.c
-  正在生成代码...
-  jpeg16.vcxproj -> E:\jpeg_VS2022\build\jpeg16.dir\Debug\jpeg16.lib
+﻿  jpeg16.vcxproj -> E:\jpeg_VS2022\build\jpeg16.dir\Debug\jpeg16.lib
