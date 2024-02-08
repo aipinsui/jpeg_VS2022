@@ -1,0 +1,7 @@
+# CMake generation dependency list for this directory.
+D:/CMake/share/cmake-3.28/Modules/CMakeASMInformation.cmake
+D:/CMake/share/cmake-3.28/Modules/CMakeASM_NASMInformation.cmake
+D:/CMake/share/cmake-3.28/Modules/CheckLanguage.cmake
+D:\CMake\share\cmake-3.28\Templates\MSBuild\nasm.props.in
+E:/jpeg_VS2022/build/CMakeFiles/3.28.3/CMakeASM_NASMCompiler.cmake
+E:/jpeg_VS2022/simd/CMakeLists.txt

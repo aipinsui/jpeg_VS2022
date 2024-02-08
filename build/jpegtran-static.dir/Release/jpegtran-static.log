@@ -1,0 +1,7 @@
+﻿  Building Custom Rule E:/jpeg_VS2022/CMakeLists.txt
+  jpegtran.c
+  cdjpeg.c
+  rdswitch.c
+  transupp.c
+  正在生成代码...
+  jpegtran-static.vcxproj -> E:\jpeg_VS2022\build\Release\jpegtran-static.exe

@@ -1,0 +1,10 @@
+^E:\JPEG_VS2022\SIMD\CMAKELISTS.TXT
+setlocal
+D:\CMake\bin\cmake.exe -SE:/jpeg_VS2022 -BE:/jpeg_VS2022/build --check-stamp-file E:/jpeg_VS2022/build/simd/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

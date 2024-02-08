@@ -1,0 +1,1 @@
+E:\jpeg_VS2022\build\turbojpeg16-static.dir\Release\turbojpeg16-static.lib

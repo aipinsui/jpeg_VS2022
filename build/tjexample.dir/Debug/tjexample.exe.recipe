@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs>
+    <ProjectOutput>
+      <FullPath>E:\jpeg_VS2022\build\x64\Debug\ZERO_CHECK</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>E:\jpeg_VS2022\build\x64\Debug\simd-objs</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>E:\jpeg_VS2022\build\Debug\turbojpeg.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>E:\jpeg_VS2022\build\Debug\tjexample.exe</FullPath>
+    </ProjectOutput>
+  </ProjectOutputs>
+  <ContentFiles />
+  <SatelliteDlls />
+  <NonRecipeFileRefs />
+</Project>

@@ -1,0 +1,11 @@
+﻿  Building Custom Rule E:/jpeg_VS2022/sharedlib/CMakeLists.txt
+  djpeg.c
+  cdjpeg.c
+  rdcolmap.c
+  rdswitch.c
+  wrbmp.c
+  wrgif.c
+  wrppm.c
+  wrtarga.c
+  正在生成代码...
+  djpeg.vcxproj -> E:\jpeg_VS2022\build\Release\djpeg.exe

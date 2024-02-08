@@ -1,0 +1,4 @@
+# CMake generation dependency list for this directory.
+D:\CMake\share\cmake-3.28\Templates\MSBuild\nasm.props.in
+E:/jpeg_VS2022/sharedlib/CMakeLists.txt
+E:/jpeg_VS2022/win/jpeg.rc.in

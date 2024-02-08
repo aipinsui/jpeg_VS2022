@@ -1,0 +1,1 @@
+E:\jpeg_VS2022\build\sharedlib\djpeg16.dir\Release\djpeg16.lib

@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="E:\jpeg_VS2022\build\CMakeFiles\45eb0bc6b22aaf897b46ed8ca31c19b5\jccolor-avx2.asm.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\jpeg_VS2022\build\CMakeFiles\45eb0bc6b22aaf897b46ed8ca31c19b5\jccolor-sse2.asm.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\jpeg_VS2022\build\CMakeFiles\45eb0bc6b22aaf897b46ed8ca31c19b5\jcgray-avx2.asm.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\jpeg_VS2022\build\CMakeFiles\45eb0bc6b22aaf897b46ed8ca31c19b5\jcgray-sse2.asm.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\jpeg_VS2022\build\CMakeFiles\45eb0bc6b22aaf897b46ed8ca31c19b5\jchuff-sse2.asm.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\jpeg_VS2022\build\CMakeFiles\45eb0bc6b22aaf897b46ed8ca31c19b5\jcphuff-sse2.asm.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\jpeg_VS2022\build\CMakeFiles\45eb0bc6b22aaf897b46ed8ca31c19b5\jcsample-avx2.asm.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\jpeg_VS2022\build\CMakeFiles\45eb0bc6b22aaf897b46ed8ca31c19b5\jcsample-sse2.asm.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\jpeg_VS2022\build\CMakeFiles\45eb0bc6b22aaf897b46ed8ca31c19b5\jdcolor-avx2.asm.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\jpeg_VS2022\build\CMakeFiles\45eb0bc6b22aaf897b46ed8ca31c19b5\jdcolor-sse2.asm.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\jpeg_VS2022\build\CMakeFiles\45eb0bc6b22aaf897b46ed8ca31c19b5\jdmerge-avx2.asm.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\jpeg_VS2022\build\CMakeFiles\45eb0bc6b22aaf897b46ed8ca31c19b5\jdmerge-sse2.asm.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\jpeg_VS2022\build\CMakeFiles\45eb0bc6b22aaf897b46ed8ca31c19b5\jdsample-avx2.asm.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\jpeg_VS2022\build\CMakeFiles\45eb0bc6b22aaf897b46ed8ca31c19b5\jdsample-sse2.asm.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\jpeg_VS2022\build\CMakeFiles\45eb0bc6b22aaf897b46ed8ca31c19b5\jfdctflt-sse.asm.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\jpeg_VS2022\build\CMakeFiles\45eb0bc6b22aaf897b46ed8ca31c19b5\jfdctfst-sse2.asm.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\jpeg_VS2022\build\CMakeFiles\45eb0bc6b22aaf897b46ed8ca31c19b5\jfdctint-avx2.asm.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\jpeg_VS2022\build\CMakeFiles\45eb0bc6b22aaf897b46ed8ca31c19b5\jfdctint-sse2.asm.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\jpeg_VS2022\build\CMakeFiles\45eb0bc6b22aaf897b46ed8ca31c19b5\jidctflt-sse2.asm.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\jpeg_VS2022\build\CMakeFiles\45eb0bc6b22aaf897b46ed8ca31c19b5\jidctfst-sse2.asm.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\jpeg_VS2022\build\CMakeFiles\45eb0bc6b22aaf897b46ed8ca31c19b5\jidctint-avx2.asm.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\jpeg_VS2022\build\CMakeFiles\45eb0bc6b22aaf897b46ed8ca31c19b5\jidctint-sse2.asm.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\jpeg_VS2022\build\CMakeFiles\45eb0bc6b22aaf897b46ed8ca31c19b5\jidctred-sse2.asm.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\jpeg_VS2022\build\CMakeFiles\45eb0bc6b22aaf897b46ed8ca31c19b5\jquantf-sse2.asm.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\jpeg_VS2022\build\CMakeFiles\45eb0bc6b22aaf897b46ed8ca31c19b5\jquanti-avx2.asm.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\jpeg_VS2022\build\CMakeFiles\45eb0bc6b22aaf897b46ed8ca31c19b5\jquanti-sse2.asm.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\jpeg_VS2022\build\CMakeFiles\45eb0bc6b22aaf897b46ed8ca31c19b5\jsimdcpu.asm.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\jpeg_VS2022\build\CMakeFiles\0a87eb9080202ffc0f2ff27021e4d3aa\simd-objs.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\jpeg_VS2022\simd\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="E:\jpeg_VS2022\build\simd\CMakeFiles\simd-objs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{19577A53-FCD6-34C6-9F76-047DF49B58C3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

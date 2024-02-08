@@ -1,0 +1,10 @@
+prefix=E:/jpeg_VS2022/package
+exec_prefix=E:/jpeg_VS2022/package
+libdir=E:/jpeg_VS2022/package/lib
+includedir=E:/jpeg_VS2022/package/include
+
+Name: libturbojpeg
+Description: A SIMD-accelerated JPEG codec that provides the TurboJPEG API
+Version: 3.0.3
+Libs: -L${libdir} -lturbojpeg
+Cflags: -I${includedir}

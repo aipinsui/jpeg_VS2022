@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="E:\jpeg_VS2022\build\simd\CMakeFiles\CheckASM_NASM\CMakeFiles\d7945fd8bd3cd5d2460521232f903bf1\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{C173DAC9-1287-32EF-9F99-1B5E18B93BAA}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
