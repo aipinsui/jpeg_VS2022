@@ -1,1 +1,0 @@
-E:\jpeg_VS2022\build\sharedlib\cjpeg16.dir\Debug\cjpeg16.lib

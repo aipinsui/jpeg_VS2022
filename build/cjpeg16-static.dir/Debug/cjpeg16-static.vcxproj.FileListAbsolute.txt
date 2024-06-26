@@ -1,1 +1,0 @@
-E:\jpeg_VS2022\build\cjpeg16-static.dir\Debug\cjpeg16-static.lib
