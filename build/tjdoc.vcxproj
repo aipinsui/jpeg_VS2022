@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7B2F15C3-8A77-310F-A420-1EB2255FD352}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>tjdoc</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="E:\jpeg_VS2022\build\tjdoc.dir\nasm.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\jpeg_VS2022\build;E:\jpeg_VS2022;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\jpeg_VS2022\build;E:\jpeg_VS2022;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\jpeg_VS2022\build;E:\jpeg_VS2022;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\jpeg_VS2022\build;E:\jpeg_VS2022;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\jpeg_VS2022\build\CMakeFiles\37a9dbd1d904f67e599c56951e2d9f90\tjdoc.rule">
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd E:\jpeg_VS2022
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+doxygen -s doxygen.config
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\jpeg_VS2022\build\CMakeFiles\tjdoc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd E:\jpeg_VS2022
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+doxygen -s doxygen.config
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\jpeg_VS2022\build\CMakeFiles\tjdoc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</VerifyInputsAndOutputsExist>
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd E:\jpeg_VS2022
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+doxygen -s doxygen.config
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\jpeg_VS2022\build\CMakeFiles\tjdoc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</VerifyInputsAndOutputsExist>
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd E:\jpeg_VS2022
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+doxygen -s doxygen.config
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\jpeg_VS2022\build\CMakeFiles\tjdoc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\jpeg_VS2022\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/jpeg_VS2022/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\CMake\bin\cmake.exe -SE:/jpeg_VS2022 -BE:/jpeg_VS2022/build --check-stamp-file E:/jpeg_VS2022/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\CMake\share\cmake-3.29\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;D:\CMake\share\cmake-3.29\Modules\CMakeCInformation.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeGenericSystem.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeLanguageInformation.cmake;D:\CMake\share\cmake-3.29\Modules\CMakePackageConfigHelpers.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeRCInformation.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake;D:\CMake\share\cmake-3.29\Modules\CheckCSourceCompiles.cmake;D:\CMake\share\cmake-3.29\Modules\CheckIncludeFile.cmake;D:\CMake\share\cmake-3.29\Modules\CheckIncludeFileCXX.cmake;D:\CMake\share\cmake-3.29\Modules\CheckIncludeFiles.cmake;D:\CMake\share\cmake-3.29\Modules\CheckTypeSize.cmake;D:\CMake\share\cmake-3.29\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\CMake\share\cmake-3.29\Modules\Compiler\MSVC-C.cmake;D:\CMake\share\cmake-3.29\Modules\Compiler\MSVC.cmake;D:\CMake\share\cmake-3.29\Modules\Internal\CheckSourceCompiles.cmake;D:\CMake\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake;D:\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-C.cmake;D:\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC.cmake;D:\CMake\share\cmake-3.29\Modules\Platform\Windows.cmake;D:\CMake\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake;D:\CMake\share\cmake-3.29\Modules\WriteBasicConfigVersionFile.cmake;D:\CMake\share\cmake-3.29\Templates\MSBuild\nasm.props.in;E:\jpeg_VS2022\build\CMakeFiles\3.29.6\CMakeCCompiler.cmake;E:\jpeg_VS2022\build\CMakeFiles\3.29.6\CMakeRCCompiler.cmake;E:\jpeg_VS2022\build\CMakeFiles\3.29.6\CMakeSystem.cmake;E:\jpeg_VS2022\cmakescripts\BuildPackages.cmake;E:\jpeg_VS2022\cmakescripts\GNUInstallDirs.cmake;E:\jpeg_VS2022\cmakescripts\PackageInfo.cmake;E:\jpeg_VS2022\cmakescripts\cmake_uninstall.cmake.in;E:\jpeg_VS2022\croptest.in;E:\jpeg_VS2022\jconfig.h.in;E:\jpeg_VS2022\jconfigint.h.in;E:\jpeg_VS2022\jversion.h.in;E:\jpeg_VS2022\release\Config.cmake.in;E:\jpeg_VS2022\release\installer.nsi.in;E:\jpeg_VS2022\release\libjpeg.pc.in;E:\jpeg_VS2022\release\libturbojpeg.pc.in;E:\jpeg_VS2022\release\maketarball.in;E:\jpeg_VS2022\tjbenchtest.in;E:\jpeg_VS2022\tjexampletest.in;E:\jpeg_VS2022\win\projectTargets.cmake.in;E:\jpeg_VS2022\win\turbojpeg.rc.in;E:\jpeg_VS2022\win\vc\projectTargets-release.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\jpeg_VS2022\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/jpeg_VS2022/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\CMake\bin\cmake.exe -SE:/jpeg_VS2022 -BE:/jpeg_VS2022/build --check-stamp-file E:/jpeg_VS2022/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\CMake\share\cmake-3.29\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;D:\CMake\share\cmake-3.29\Modules\CMakeCInformation.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeGenericSystem.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeLanguageInformation.cmake;D:\CMake\share\cmake-3.29\Modules\CMakePackageConfigHelpers.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeRCInformation.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake;D:\CMake\share\cmake-3.29\Modules\CheckCSourceCompiles.cmake;D:\CMake\share\cmake-3.29\Modules\CheckIncludeFile.cmake;D:\CMake\share\cmake-3.29\Modules\CheckIncludeFileCXX.cmake;D:\CMake\share\cmake-3.29\Modules\CheckIncludeFiles.cmake;D:\CMake\share\cmake-3.29\Modules\CheckTypeSize.cmake;D:\CMake\share\cmake-3.29\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\CMake\share\cmake-3.29\Modules\Compiler\MSVC-C.cmake;D:\CMake\share\cmake-3.29\Modules\Compiler\MSVC.cmake;D:\CMake\share\cmake-3.29\Modules\Internal\CheckSourceCompiles.cmake;D:\CMake\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake;D:\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-C.cmake;D:\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC.cmake;D:\CMake\share\cmake-3.29\Modules\Platform\Windows.cmake;D:\CMake\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake;D:\CMake\share\cmake-3.29\Modules\WriteBasicConfigVersionFile.cmake;D:\CMake\share\cmake-3.29\Templates\MSBuild\nasm.props.in;E:\jpeg_VS2022\build\CMakeFiles\3.29.6\CMakeCCompiler.cmake;E:\jpeg_VS2022\build\CMakeFiles\3.29.6\CMakeRCCompiler.cmake;E:\jpeg_VS2022\build\CMakeFiles\3.29.6\CMakeSystem.cmake;E:\jpeg_VS2022\cmakescripts\BuildPackages.cmake;E:\jpeg_VS2022\cmakescripts\GNUInstallDirs.cmake;E:\jpeg_VS2022\cmakescripts\PackageInfo.cmake;E:\jpeg_VS2022\cmakescripts\cmake_uninstall.cmake.in;E:\jpeg_VS2022\croptest.in;E:\jpeg_VS2022\jconfig.h.in;E:\jpeg_VS2022\jconfigint.h.in;E:\jpeg_VS2022\jversion.h.in;E:\jpeg_VS2022\release\Config.cmake.in;E:\jpeg_VS2022\release\installer.nsi.in;E:\jpeg_VS2022\release\libjpeg.pc.in;E:\jpeg_VS2022\release\libturbojpeg.pc.in;E:\jpeg_VS2022\release\maketarball.in;E:\jpeg_VS2022\tjbenchtest.in;E:\jpeg_VS2022\tjexampletest.in;E:\jpeg_VS2022\win\projectTargets.cmake.in;E:\jpeg_VS2022\win\turbojpeg.rc.in;E:\jpeg_VS2022\win\vc\projectTargets-release.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\jpeg_VS2022\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/jpeg_VS2022/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\CMake\bin\cmake.exe -SE:/jpeg_VS2022 -BE:/jpeg_VS2022/build --check-stamp-file E:/jpeg_VS2022/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\CMake\share\cmake-3.29\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;D:\CMake\share\cmake-3.29\Modules\CMakeCInformation.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeGenericSystem.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeLanguageInformation.cmake;D:\CMake\share\cmake-3.29\Modules\CMakePackageConfigHelpers.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeRCInformation.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake;D:\CMake\share\cmake-3.29\Modules\CheckCSourceCompiles.cmake;D:\CMake\share\cmake-3.29\Modules\CheckIncludeFile.cmake;D:\CMake\share\cmake-3.29\Modules\CheckIncludeFileCXX.cmake;D:\CMake\share\cmake-3.29\Modules\CheckIncludeFiles.cmake;D:\CMake\share\cmake-3.29\Modules\CheckTypeSize.cmake;D:\CMake\share\cmake-3.29\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\CMake\share\cmake-3.29\Modules\Compiler\MSVC-C.cmake;D:\CMake\share\cmake-3.29\Modules\Compiler\MSVC.cmake;D:\CMake\share\cmake-3.29\Modules\Internal\CheckSourceCompiles.cmake;D:\CMake\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake;D:\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-C.cmake;D:\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC.cmake;D:\CMake\share\cmake-3.29\Modules\Platform\Windows.cmake;D:\CMake\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake;D:\CMake\share\cmake-3.29\Modules\WriteBasicConfigVersionFile.cmake;D:\CMake\share\cmake-3.29\Templates\MSBuild\nasm.props.in;E:\jpeg_VS2022\build\CMakeFiles\3.29.6\CMakeCCompiler.cmake;E:\jpeg_VS2022\build\CMakeFiles\3.29.6\CMakeRCCompiler.cmake;E:\jpeg_VS2022\build\CMakeFiles\3.29.6\CMakeSystem.cmake;E:\jpeg_VS2022\cmakescripts\BuildPackages.cmake;E:\jpeg_VS2022\cmakescripts\GNUInstallDirs.cmake;E:\jpeg_VS2022\cmakescripts\PackageInfo.cmake;E:\jpeg_VS2022\cmakescripts\cmake_uninstall.cmake.in;E:\jpeg_VS2022\croptest.in;E:\jpeg_VS2022\jconfig.h.in;E:\jpeg_VS2022\jconfigint.h.in;E:\jpeg_VS2022\jversion.h.in;E:\jpeg_VS2022\release\Config.cmake.in;E:\jpeg_VS2022\release\installer.nsi.in;E:\jpeg_VS2022\release\libjpeg.pc.in;E:\jpeg_VS2022\release\libturbojpeg.pc.in;E:\jpeg_VS2022\release\maketarball.in;E:\jpeg_VS2022\tjbenchtest.in;E:\jpeg_VS2022\tjexampletest.in;E:\jpeg_VS2022\win\projectTargets.cmake.in;E:\jpeg_VS2022\win\turbojpeg.rc.in;E:\jpeg_VS2022\win\vc\projectTargets-release.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\jpeg_VS2022\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/jpeg_VS2022/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\CMake\bin\cmake.exe -SE:/jpeg_VS2022 -BE:/jpeg_VS2022/build --check-stamp-file E:/jpeg_VS2022/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\CMake\share\cmake-3.29\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;D:\CMake\share\cmake-3.29\Modules\CMakeCInformation.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeGenericSystem.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeLanguageInformation.cmake;D:\CMake\share\cmake-3.29\Modules\CMakePackageConfigHelpers.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeRCInformation.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake;D:\CMake\share\cmake-3.29\Modules\CheckCSourceCompiles.cmake;D:\CMake\share\cmake-3.29\Modules\CheckIncludeFile.cmake;D:\CMake\share\cmake-3.29\Modules\CheckIncludeFileCXX.cmake;D:\CMake\share\cmake-3.29\Modules\CheckIncludeFiles.cmake;D:\CMake\share\cmake-3.29\Modules\CheckTypeSize.cmake;D:\CMake\share\cmake-3.29\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\CMake\share\cmake-3.29\Modules\Compiler\MSVC-C.cmake;D:\CMake\share\cmake-3.29\Modules\Compiler\MSVC.cmake;D:\CMake\share\cmake-3.29\Modules\Internal\CheckSourceCompiles.cmake;D:\CMake\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake;D:\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-C.cmake;D:\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC.cmake;D:\CMake\share\cmake-3.29\Modules\Platform\Windows.cmake;D:\CMake\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake;D:\CMake\share\cmake-3.29\Modules\WriteBasicConfigVersionFile.cmake;D:\CMake\share\cmake-3.29\Templates\MSBuild\nasm.props.in;E:\jpeg_VS2022\build\CMakeFiles\3.29.6\CMakeCCompiler.cmake;E:\jpeg_VS2022\build\CMakeFiles\3.29.6\CMakeRCCompiler.cmake;E:\jpeg_VS2022\build\CMakeFiles\3.29.6\CMakeSystem.cmake;E:\jpeg_VS2022\cmakescripts\BuildPackages.cmake;E:\jpeg_VS2022\cmakescripts\GNUInstallDirs.cmake;E:\jpeg_VS2022\cmakescripts\PackageInfo.cmake;E:\jpeg_VS2022\cmakescripts\cmake_uninstall.cmake.in;E:\jpeg_VS2022\croptest.in;E:\jpeg_VS2022\jconfig.h.in;E:\jpeg_VS2022\jconfigint.h.in;E:\jpeg_VS2022\jversion.h.in;E:\jpeg_VS2022\release\Config.cmake.in;E:\jpeg_VS2022\release\installer.nsi.in;E:\jpeg_VS2022\release\libjpeg.pc.in;E:\jpeg_VS2022\release\libturbojpeg.pc.in;E:\jpeg_VS2022\release\maketarball.in;E:\jpeg_VS2022\tjbenchtest.in;E:\jpeg_VS2022\tjexampletest.in;E:\jpeg_VS2022\win\projectTargets.cmake.in;E:\jpeg_VS2022\win\turbojpeg.rc.in;E:\jpeg_VS2022\win\vc\projectTargets-release.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\jpeg_VS2022\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="E:\jpeg_VS2022\build\CMakeFiles\tjdoc">
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\jpeg_VS2022\build\ZERO_CHECK.vcxproj">
+      <Project>{A23734FD-7F03-3E2F-A57D-B7031BA4EE3D}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="D:\CMake\share\cmake-3.29\Templates\MSBuild\nasm.targets" />
+  </ImportGroup>
+</Project>

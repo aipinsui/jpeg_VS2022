@@ -1,0 +1,953 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.29/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:7 (project)"
+    message: |
+      The system is: Windows - 10.0.19045 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "D:/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/CMake/share/cmake-3.29/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:7 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      閫傜敤浜?.NET Framework MSBuild 鐗堟湰 17.10.4+10fbfbf2e
+      鐢熸垚鍚姩鏃堕棿涓?2024/6/26 21:26:48銆?
+      
+      鑺傜偣 1 涓婄殑椤圭洰鈥淓:\\jpeg_VS2022\\build\\CMakeFiles\\3.29.6\\CompilerIdC\\CompilerIdC.vcxproj鈥?榛樿鐩爣)銆?
+      PrepareForBuild:
+        姝ｅ湪鍒涘缓鐩綍鈥淒ebug\\鈥濄€?
+        宸插惎鐢ㄧ粨鏋勫寲杈撳嚭銆傜紪璇戝櫒璇婃柇鐨勬牸寮忚缃皢鍙嶆槧閿欒灞傛缁撴瀯銆傛湁鍏宠缁嗕俊鎭紝璇峰弬闃?https://aka.ms/cpp/structured-output銆?
+        姝ｅ湪鍒涘缓鐩綍鈥淒ebug\\CompilerIdC.tlog\\鈥濄€?
+      InitializeBuildStatus:
+        姝ｅ湪鍒涘缓鈥淒ebug\\CompilerIdC.tlog\\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
+        姝ｅ湪瀵光€淒ebug\\CompilerIdC.tlog\\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
+      ClCompile:
+        d:\\Microsoft Visual Studio 17.0\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TC /FC /errorReport:queue CMakeCCompilerId.c
+        CMakeCCompilerId.c
+      Link:
+        d:\\Microsoft Visual Studio 17.0\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdC.lib" /MACHINE:X64 Debug\\CMakeCCompilerId.obj
+        CompilerIdC.vcxproj -> E:\\jpeg_VS2022\\build\\CMakeFiles\\3.29.6\\CompilerIdC\\CompilerIdC.exe
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_C_COMPILER=d:\\Microsoft Visual Studio 17.0\\VC\\Tools\\MSVC\\14.40.33807\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        姝ｅ湪鍒犻櫎鏂囦欢鈥淒ebug\\CompilerIdC.tlog\\unsuccessfulbuild鈥濄€?
+        姝ｅ湪瀵光€淒ebug\\CompilerIdC.tlog\\CompilerIdC.lastbuildstate鈥濇墽琛?Touch 浠诲姟銆?
+      宸插畬鎴愮敓鎴愰」鐩€淓:\\jpeg_VS2022\\build\\CMakeFiles\\3.29.6\\CompilerIdC\\CompilerIdC.vcxproj鈥?榛樿鐩爣)鐨勬搷浣溿€?
+      
+      宸叉垚鍔熺敓鎴愩€?
+          0 涓鍛?
+          0 涓敊璇?
+      
+      宸茬敤鏃堕棿 00:00:00.81
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+      
+      The C compiler identification is MSVC, found in:
+        E:/jpeg_VS2022/build/CMakeFiles/3.29.6/CompilerIdC/CompilerIdC.exe
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:67 (try_compile)"
+      - "D:/CMake/share/cmake-3.29/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:7 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "E:/jpeg_VS2022/build/CMakeFiles/CMakeScratch/TryCompile-gq2ghq"
+      binary: "E:/jpeg_VS2022/build/CMakeFiles/CMakeScratch/TryCompile-gq2ghq"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'E:/jpeg_VS2022/build/CMakeFiles/CMakeScratch/TryCompile-gq2ghq'
+        
+        Run Build Command(s): "d:/Microsoft Visual Studio 17.0/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_49c06.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        閫傜敤浜?.NET Framework MSBuild 鐗堟湰 17.10.4+10fbfbf2e
+        鐢熸垚鍚姩鏃堕棿涓?2024/6/26 21:26:49銆?
+        
+        鑺傜偣 1 涓婄殑椤圭洰鈥淓:\\jpeg_VS2022\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gq2ghq\\cmTC_49c06.vcxproj鈥?榛樿鐩爣)銆?
+        PrepareForBuild:
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_49c06.dir\\Debug\\鈥濄€?
+          宸插惎鐢ㄧ粨鏋勫寲杈撳嚭銆傜紪璇戝櫒璇婃柇鐨勬牸寮忚缃皢鍙嶆槧閿欒灞傛缁撴瀯銆傛湁鍏宠缁嗕俊鎭紝璇峰弬闃?https://aka.ms/cpp/structured-output銆?
+          姝ｅ湪鍒涘缓鐩綍鈥淓:\\jpeg_VS2022\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gq2ghq\\Debug\\鈥濄€?
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_49c06.dir\\Debug\\cmTC_49c06.tlog\\鈥濄€?
+        InitializeBuildStatus:
+          姝ｅ湪鍒涘缓鈥渃mTC_49c06.dir\\Debug\\cmTC_49c06.tlog\\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
+          姝ｅ湪瀵光€渃mTC_49c06.dir\\Debug\\cmTC_49c06.tlog\\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
+        ClCompile:
+          d:\\Microsoft Visual Studio 17.0\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_49c06.dir\\Debug\\\\" /Fd"cmTC_49c06.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "D:\\CMake\\share\\cmake-3.29\\Modules\\CMakeCCompilerABI.c"
+          鐢ㄤ簬 x64 鐨?Microsoft (R) C/C++ 浼樺寲缂栬瘧鍣?19.40.33811 鐗?
+          鐗堟潈鎵€鏈?C) Microsoft Corporation銆備繚鐣欐墍鏈夋潈鍒┿€?
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_49c06.dir\\Debug\\\\" /Fd"cmTC_49c06.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "D:\\CMake\\share\\cmake-3.29\\Modules\\CMakeCCompilerABI.c"
+          CMakeCCompilerABI.c
+        Link:
+          d:\\Microsoft Visual Studio 17.0\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"E:\\jpeg_VS2022\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gq2ghq\\Debug\\cmTC_49c06.exe" /INCREMENTAL /ILK:"cmTC_49c06.dir\\Debug\\cmTC_49c06.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:/jpeg_VS2022/build/CMakeFiles/CMakeScratch/TryCompile-gq2ghq/Debug/cmTC_49c06.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:/jpeg_VS2022/build/CMakeFiles/CMakeScratch/TryCompile-gq2ghq/Debug/cmTC_49c06.lib" /MACHINE:X64  /machine:x64 cmTC_49c06.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_49c06.vcxproj -> E:\\jpeg_VS2022\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gq2ghq\\Debug\\cmTC_49c06.exe
+        FinalizeBuildStatus:
+          姝ｅ湪鍒犻櫎鏂囦欢鈥渃mTC_49c06.dir\\Debug\\cmTC_49c06.tlog\\unsuccessfulbuild鈥濄€?
+          姝ｅ湪瀵光€渃mTC_49c06.dir\\Debug\\cmTC_49c06.tlog\\cmTC_49c06.lastbuildstate鈥濇墽琛?Touch 浠诲姟銆?
+        宸插畬鎴愮敓鎴愰」鐩€淓:\\jpeg_VS2022\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gq2ghq\\cmTC_49c06.vcxproj鈥?榛樿鐩爣)鐨勬搷浣溿€?
+        
+        宸叉垚鍔熺敓鎴愩€?
+            0 涓鍛?
+            0 涓敊璇?
+        
+        宸茬敤鏃堕棿 00:00:00.53
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:173 (message)"
+      - "D:/CMake/share/cmake-3.29/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:7 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        linker tool for 'C': d:/Microsoft Visual Studio 17.0/VC/Tools/MSVC/14.40.33807/bin/HostX64/x64/link.exe
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.29/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "D:/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:210 (cmake_determine_linker_id)"
+      - "D:/CMake/share/cmake-3.29/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:7 (project)"
+    message: |
+      Running the C compiler's linker: "d:/Microsoft Visual Studio 17.0/VC/Tools/MSVC/14.40.33807/bin/HostX64/x64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.40.33811.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.29/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "D:/CMake/share/cmake-3.29/Modules/CheckTypeSize.cmake:250 (check_include_file)"
+      - "CMakeLists.txt:454 (check_type_size)"
+    checks:
+      - "Looking for sys/types.h"
+    directories:
+      source: "E:/jpeg_VS2022/build/CMakeFiles/CMakeScratch/TryCompile-7yf6l6"
+      binary: "E:/jpeg_VS2022/build/CMakeFiles/CMakeScratch/TryCompile-7yf6l6"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>"
+    buildResult:
+      variable: "HAVE_SYS_TYPES_H"
+      cached: true
+      stdout: |
+        Change Dir: 'E:/jpeg_VS2022/build/CMakeFiles/CMakeScratch/TryCompile-7yf6l6'
+        
+        Run Build Command(s): "d:/Microsoft Visual Studio 17.0/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_d5657.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        閫傜敤浜?.NET Framework MSBuild 鐗堟湰 17.10.4+10fbfbf2e
+        鐢熸垚鍚姩鏃堕棿涓?2024/6/26 21:26:50銆?
+        
+        鑺傜偣 1 涓婄殑椤圭洰鈥淓:\\jpeg_VS2022\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7yf6l6\\cmTC_d5657.vcxproj鈥?榛樿鐩爣)銆?
+        PrepareForBuild:
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_d5657.dir\\Debug\\鈥濄€?
+          宸插惎鐢ㄧ粨鏋勫寲杈撳嚭銆傜紪璇戝櫒璇婃柇鐨勬牸寮忚缃皢鍙嶆槧閿欒灞傛缁撴瀯銆傛湁鍏宠缁嗕俊鎭紝璇峰弬闃?https://aka.ms/cpp/structured-output銆?
+          姝ｅ湪鍒涘缓鐩綍鈥淓:\\jpeg_VS2022\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7yf6l6\\Debug\\鈥濄€?
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_d5657.dir\\Debug\\cmTC_d5657.tlog\\鈥濄€?
+        InitializeBuildStatus:
+          姝ｅ湪鍒涘缓鈥渃mTC_d5657.dir\\Debug\\cmTC_d5657.tlog\\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
+          姝ｅ湪瀵光€渃mTC_d5657.dir\\Debug\\cmTC_d5657.tlog\\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
+        ClCompile:
+          d:\\Microsoft Visual Studio 17.0\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_d5657.dir\\Debug\\\\" /Fd"cmTC_d5657.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "E:\\jpeg_VS2022\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7yf6l6\\CheckIncludeFile.c"
+          鐢ㄤ簬 x64 鐨?Microsoft (R) C/C++ 浼樺寲缂栬瘧鍣?19.40.33811 鐗?
+          鐗堟潈鎵€鏈?C) Microsoft Corporation銆備繚鐣欐墍鏈夋潈鍒┿€?
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_d5657.dir\\Debug\\\\" /Fd"cmTC_d5657.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "E:\\jpeg_VS2022\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7yf6l6\\CheckIncludeFile.c"
+          CheckIncludeFile.c
+        Link:
+          d:\\Microsoft Visual Studio 17.0\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"E:\\jpeg_VS2022\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7yf6l6\\Debug\\cmTC_d5657.exe" /INCREMENTAL /ILK:"cmTC_d5657.dir\\Debug\\cmTC_d5657.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:/jpeg_VS2022/build/CMakeFiles/CMakeScratch/TryCompile-7yf6l6/Debug/cmTC_d5657.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:/jpeg_VS2022/build/CMakeFiles/CMakeScratch/TryCompile-7yf6l6/Debug/cmTC_d5657.lib" /MACHINE:X64  /machine:x64 cmTC_d5657.dir\\Debug\\CheckIncludeFile.obj
+          cmTC_d5657.vcxproj -> E:\\jpeg_VS2022\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7yf6l6\\Debug\\cmTC_d5657.exe
+        FinalizeBuildStatus:
+          姝ｅ湪鍒犻櫎鏂囦欢鈥渃mTC_d5657.dir\\Debug\\cmTC_d5657.tlog\\unsuccessfulbuild鈥濄€?
+          姝ｅ湪瀵光€渃mTC_d5657.dir\\Debug\\cmTC_d5657.tlog\\cmTC_d5657.lastbuildstate鈥濇墽琛?Touch 浠诲姟銆?
+        宸插畬鎴愮敓鎴愰」鐩€淓:\\jpeg_VS2022\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7yf6l6\\cmTC_d5657.vcxproj鈥?榛樿鐩爣)鐨勬搷浣溿€?
+        
+        宸叉垚鍔熺敓鎴愩€?
+            0 涓鍛?
+            0 涓敊璇?
+        
+        宸茬敤鏃堕棿 00:00:00.61
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.29/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "D:/CMake/share/cmake-3.29/Modules/CheckTypeSize.cmake:251 (check_include_file)"
+      - "CMakeLists.txt:454 (check_type_size)"
+    checks:
+      - "Looking for stdint.h"
+    directories:
+      source: "E:/jpeg_VS2022/build/CMakeFiles/CMakeScratch/TryCompile-iavuei"
+      binary: "E:/jpeg_VS2022/build/CMakeFiles/CMakeScratch/TryCompile-iavuei"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>"
+    buildResult:
+      variable: "HAVE_STDINT_H"
+      cached: true
+      stdout: |
+        Change Dir: 'E:/jpeg_VS2022/build/CMakeFiles/CMakeScratch/TryCompile-iavuei'
+        
+        Run Build Command(s): "d:/Microsoft Visual Studio 17.0/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_1a81a.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        閫傜敤浜?.NET Framework MSBuild 鐗堟湰 17.10.4+10fbfbf2e
+        鐢熸垚鍚姩鏃堕棿涓?2024/6/26 21:26:51銆?
+        
+        鑺傜偣 1 涓婄殑椤圭洰鈥淓:\\jpeg_VS2022\\build\\CMakeFiles\\CMakeScratch\\TryCompile-iavuei\\cmTC_1a81a.vcxproj鈥?榛樿鐩爣)銆?
+        PrepareForBuild:
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_1a81a.dir\\Debug\\鈥濄€?
+          宸插惎鐢ㄧ粨鏋勫寲杈撳嚭銆傜紪璇戝櫒璇婃柇鐨勬牸寮忚缃皢鍙嶆槧閿欒灞傛缁撴瀯銆傛湁鍏宠缁嗕俊鎭紝璇峰弬闃?https://aka.ms/cpp/structured-output銆?
+          姝ｅ湪鍒涘缓鐩綍鈥淓:\\jpeg_VS2022\\build\\CMakeFiles\\CMakeScratch\\TryCompile-iavuei\\Debug\\鈥濄€?
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_1a81a.dir\\Debug\\cmTC_1a81a.tlog\\鈥濄€?
+        InitializeBuildStatus:
+          姝ｅ湪鍒涘缓鈥渃mTC_1a81a.dir\\Debug\\cmTC_1a81a.tlog\\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
+          姝ｅ湪瀵光€渃mTC_1a81a.dir\\Debug\\cmTC_1a81a.tlog\\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
+        ClCompile:
+          d:\\Microsoft Visual Studio 17.0\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_1a81a.dir\\Debug\\\\" /Fd"cmTC_1a81a.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "E:\\jpeg_VS2022\\build\\CMakeFiles\\CMakeScratch\\TryCompile-iavuei\\CheckIncludeFile.c"
+          鐢ㄤ簬 x64 鐨?Microsoft (R) C/C++ 浼樺寲缂栬瘧鍣?19.40.33811 鐗?
+          鐗堟潈鎵€鏈?C) Microsoft Corporation銆備繚鐣欐墍鏈夋潈鍒┿€?
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_1a81a.dir\\Debug\\\\" /Fd"cmTC_1a81a.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "E:\\jpeg_VS2022\\build\\CMakeFiles\\CMakeScratch\\TryCompile-iavuei\\CheckIncludeFile.c"
+          CheckIncludeFile.c
+        Link:
+          d:\\Microsoft Visual Studio 17.0\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"E:\\jpeg_VS2022\\build\\CMakeFiles\\CMakeScratch\\TryCompile-iavuei\\Debug\\cmTC_1a81a.exe" /INCREMENTAL /ILK:"cmTC_1a81a.dir\\Debug\\cmTC_1a81a.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:/jpeg_VS2022/build/CMakeFiles/CMakeScratch/TryCompile-iavuei/Debug/cmTC_1a81a.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:/jpeg_VS2022/build/CMakeFiles/CMakeScratch/TryCompile-iavuei/Debug/cmTC_1a81a.lib" /MACHINE:X64  /machine:x64 cmTC_1a81a.dir\\Debug\\CheckIncludeFile.obj
+          cmTC_1a81a.vcxproj -> E:\\jpeg_VS2022\\build\\CMakeFiles\\CMakeScratch\\TryCompile-iavuei\\Debug\\cmTC_1a81a.exe
+        FinalizeBuildStatus:
+          姝ｅ湪鍒犻櫎鏂囦欢鈥渃mTC_1a81a.dir\\Debug\\cmTC_1a81a.tlog\\unsuccessfulbuild鈥濄€?
+          姝ｅ湪瀵光€渃mTC_1a81a.dir\\Debug\\cmTC_1a81a.tlog\\cmTC_1a81a.lastbuildstate鈥濇墽琛?Touch 浠诲姟銆?
+        宸插畬鎴愮敓鎴愰」鐩€淓:\\jpeg_VS2022\\build\\CMakeFiles\\CMakeScratch\\TryCompile-iavuei\\cmTC_1a81a.vcxproj鈥?榛樿鐩爣)鐨勬搷浣溿€?
+        
+        宸叉垚鍔熺敓鎴愩€?
+            0 涓鍛?
+            0 涓敊璇?
+        
+        宸茬敤鏃堕棿 00:00:00.60
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.29/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "D:/CMake/share/cmake-3.29/Modules/CheckTypeSize.cmake:252 (check_include_file)"
+      - "CMakeLists.txt:454 (check_type_size)"
+    checks:
+      - "Looking for stddef.h"
+    directories:
+      source: "E:/jpeg_VS2022/build/CMakeFiles/CMakeScratch/TryCompile-o2wpbi"
+      binary: "E:/jpeg_VS2022/build/CMakeFiles/CMakeScratch/TryCompile-o2wpbi"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>"
+    buildResult:
+      variable: "HAVE_STDDEF_H"
+      cached: true
+      stdout: |
+        Change Dir: 'E:/jpeg_VS2022/build/CMakeFiles/CMakeScratch/TryCompile-o2wpbi'
+        
+        Run Build Command(s): "d:/Microsoft Visual Studio 17.0/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_a4219.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        閫傜敤浜?.NET Framework MSBuild 鐗堟湰 17.10.4+10fbfbf2e
+        鐢熸垚鍚姩鏃堕棿涓?2024/6/26 21:26:51銆?
+        
+        鑺傜偣 1 涓婄殑椤圭洰鈥淓:\\jpeg_VS2022\\build\\CMakeFiles\\CMakeScratch\\TryCompile-o2wpbi\\cmTC_a4219.vcxproj鈥?榛樿鐩爣)銆?
+        PrepareForBuild:
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_a4219.dir\\Debug\\鈥濄€?
+          宸插惎鐢ㄧ粨鏋勫寲杈撳嚭銆傜紪璇戝櫒璇婃柇鐨勬牸寮忚缃皢鍙嶆槧閿欒灞傛缁撴瀯銆傛湁鍏宠缁嗕俊鎭紝璇峰弬闃?https://aka.ms/cpp/structured-output銆?
+          姝ｅ湪鍒涘缓鐩綍鈥淓:\\jpeg_VS2022\\build\\CMakeFiles\\CMakeScratch\\TryCompile-o2wpbi\\Debug\\鈥濄€?
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_a4219.dir\\Debug\\cmTC_a4219.tlog\\鈥濄€?
+        InitializeBuildStatus:
+          姝ｅ湪鍒涘缓鈥渃mTC_a4219.dir\\Debug\\cmTC_a4219.tlog\\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
+          姝ｅ湪瀵光€渃mTC_a4219.dir\\Debug\\cmTC_a4219.tlog\\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
+        ClCompile:
+          d:\\Microsoft Visual Studio 17.0\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_a4219.dir\\Debug\\\\" /Fd"cmTC_a4219.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "E:\\jpeg_VS2022\\build\\CMakeFiles\\CMakeScratch\\TryCompile-o2wpbi\\CheckIncludeFile.c"
+          鐢ㄤ簬 x64 鐨?Microsoft (R) C/C++ 浼樺寲缂栬瘧鍣?19.40.33811 鐗?
+          鐗堟潈鎵€鏈?C) Microsoft Corporation銆備繚鐣欐墍鏈夋潈鍒┿€?
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_a4219.dir\\Debug\\\\" /Fd"cmTC_a4219.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "E:\\jpeg_VS2022\\build\\CMakeFiles\\CMakeScratch\\TryCompile-o2wpbi\\CheckIncludeFile.c"
+          CheckIncludeFile.c
+        Link:
+          d:\\Microsoft Visual Studio 17.0\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"E:\\jpeg_VS2022\\build\\CMakeFiles\\CMakeScratch\\TryCompile-o2wpbi\\Debug\\cmTC_a4219.exe" /INCREMENTAL /ILK:"cmTC_a4219.dir\\Debug\\cmTC_a4219.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:/jpeg_VS2022/build/CMakeFiles/CMakeScratch/TryCompile-o2wpbi/Debug/cmTC_a4219.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:/jpeg_VS2022/build/CMakeFiles/CMakeScratch/TryCompile-o2wpbi/Debug/cmTC_a4219.lib" /MACHINE:X64  /machine:x64 cmTC_a4219.dir\\Debug\\CheckIncludeFile.obj
+          cmTC_a4219.vcxproj -> E:\\jpeg_VS2022\\build\\CMakeFiles\\CMakeScratch\\TryCompile-o2wpbi\\Debug\\cmTC_a4219.exe
+        FinalizeBuildStatus:
+          姝ｅ湪鍒犻櫎鏂囦欢鈥渃mTC_a4219.dir\\Debug\\cmTC_a4219.tlog\\unsuccessfulbuild鈥濄€?
+          姝ｅ湪瀵光€渃mTC_a4219.dir\\Debug\\cmTC_a4219.tlog\\cmTC_a4219.lastbuildstate鈥濇墽琛?Touch 浠诲姟銆?
+        宸插畬鎴愮敓鎴愰」鐩€淓:\\jpeg_VS2022\\build\\CMakeFiles\\CMakeScratch\\TryCompile-o2wpbi\\cmTC_a4219.vcxproj鈥?榛樿鐩爣)鐨勬搷浣溿€?
+        
+        宸叉垚鍔熺敓鎴愩€?
+            0 涓鍛?
+            0 涓敊璇?
+        
+        宸茬敤鏃堕棿 00:00:00.59
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.29/Modules/CheckTypeSize.cmake:146 (try_compile)"
+      - "D:/CMake/share/cmake-3.29/Modules/CheckTypeSize.cmake:271 (__check_type_size_impl)"
+      - "CMakeLists.txt:454 (check_type_size)"
+    checks:
+      - "Check size of size_t"
+    directories:
+      source: "E:/jpeg_VS2022/build/CMakeFiles/CMakeScratch/TryCompile-oof86w"
+      binary: "E:/jpeg_VS2022/build/CMakeFiles/CMakeScratch/TryCompile-oof86w"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>"
+    buildResult:
+      variable: "HAVE_SIZE_T"
+      cached: true
+      stdout: |
+        Change Dir: 'E:/jpeg_VS2022/build/CMakeFiles/CMakeScratch/TryCompile-oof86w'
+        
+        Run Build Command(s): "d:/Microsoft Visual Studio 17.0/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_8b889.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        閫傜敤浜?.NET Framework MSBuild 鐗堟湰 17.10.4+10fbfbf2e
+        鐢熸垚鍚姩鏃堕棿涓?2024/6/26 21:26:52銆?
+        
+        鑺傜偣 1 涓婄殑椤圭洰鈥淓:\\jpeg_VS2022\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oof86w\\cmTC_8b889.vcxproj鈥?榛樿鐩爣)銆?
+        PrepareForBuild:
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_8b889.dir\\Debug\\鈥濄€?
+          宸插惎鐢ㄧ粨鏋勫寲杈撳嚭銆傜紪璇戝櫒璇婃柇鐨勬牸寮忚缃皢鍙嶆槧閿欒灞傛缁撴瀯銆傛湁鍏宠缁嗕俊鎭紝璇峰弬闃?https://aka.ms/cpp/structured-output銆?
+          姝ｅ湪鍒涘缓鐩綍鈥淓:\\jpeg_VS2022\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oof86w\\Debug\\鈥濄€?
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_8b889.dir\\Debug\\cmTC_8b889.tlog\\鈥濄€?
+        InitializeBuildStatus:
+          姝ｅ湪鍒涘缓鈥渃mTC_8b889.dir\\Debug\\cmTC_8b889.tlog\\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
+          姝ｅ湪瀵光€渃mTC_8b889.dir\\Debug\\cmTC_8b889.tlog\\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
+        ClCompile:
+          d:\\Microsoft Visual Studio 17.0\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_8b889.dir\\Debug\\\\" /Fd"cmTC_8b889.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "E:\\jpeg_VS2022\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oof86w\\SIZE_T.c"
+          鐢ㄤ簬 x64 鐨?Microsoft (R) C/C++ 浼樺寲缂栬瘧鍣?19.40.33811 鐗?
+          鐗堟潈鎵€鏈?C) Microsoft Corporation銆備繚鐣欐墍鏈夋潈鍒┿€?
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_8b889.dir\\Debug\\\\" /Fd"cmTC_8b889.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "E:\\jpeg_VS2022\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oof86w\\SIZE_T.c"
+          SIZE_T.c
+        Link:
+          d:\\Microsoft Visual Studio 17.0\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"E:\\jpeg_VS2022\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oof86w\\Debug\\cmTC_8b889.exe" /INCREMENTAL /ILK:"cmTC_8b889.dir\\Debug\\cmTC_8b889.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:/jpeg_VS2022/build/CMakeFiles/CMakeScratch/TryCompile-oof86w/Debug/cmTC_8b889.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:/jpeg_VS2022/build/CMakeFiles/CMakeScratch/TryCompile-oof86w/Debug/cmTC_8b889.lib" /MACHINE:X64  /machine:x64 cmTC_8b889.dir\\Debug\\SIZE_T.obj
+          cmTC_8b889.vcxproj -> E:\\jpeg_VS2022\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oof86w\\Debug\\cmTC_8b889.exe
+        FinalizeBuildStatus:
+          姝ｅ湪鍒犻櫎鏂囦欢鈥渃mTC_8b889.dir\\Debug\\cmTC_8b889.tlog\\unsuccessfulbuild鈥濄€?
+          姝ｅ湪瀵光€渃mTC_8b889.dir\\Debug\\cmTC_8b889.tlog\\cmTC_8b889.lastbuildstate鈥濇墽琛?Touch 浠诲姟銆?
+        宸插畬鎴愮敓鎴愰」鐩€淓:\\jpeg_VS2022\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oof86w\\cmTC_8b889.vcxproj鈥?榛樿鐩爣)鐨勬搷浣溿€?
+        
+        宸叉垚鍔熺敓鎴愩€?
+            0 涓鍛?
+            0 涓敊璇?
+        
+        宸茬敤鏃堕棿 00:00:00.59
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.29/Modules/CheckTypeSize.cmake:146 (try_compile)"
+      - "D:/CMake/share/cmake-3.29/Modules/CheckTypeSize.cmake:271 (__check_type_size_impl)"
+      - "CMakeLists.txt:455 (check_type_size)"
+    checks:
+      - "Check size of unsigned long"
+    directories:
+      source: "E:/jpeg_VS2022/build/CMakeFiles/CMakeScratch/TryCompile-y14mia"
+      binary: "E:/jpeg_VS2022/build/CMakeFiles/CMakeScratch/TryCompile-y14mia"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>"
+    buildResult:
+      variable: "HAVE_UNSIGNED_LONG"
+      cached: true
+      stdout: |
+        Change Dir: 'E:/jpeg_VS2022/build/CMakeFiles/CMakeScratch/TryCompile-y14mia'
+        
+        Run Build Command(s): "d:/Microsoft Visual Studio 17.0/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_c0b55.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        閫傜敤浜?.NET Framework MSBuild 鐗堟湰 17.10.4+10fbfbf2e
+        鐢熸垚鍚姩鏃堕棿涓?2024/6/26 21:26:53銆?
+        
+        鑺傜偣 1 涓婄殑椤圭洰鈥淓:\\jpeg_VS2022\\build\\CMakeFiles\\CMakeScratch\\TryCompile-y14mia\\cmTC_c0b55.vcxproj鈥?榛樿鐩爣)銆?
+        PrepareForBuild:
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_c0b55.dir\\Debug\\鈥濄€?
+          宸插惎鐢ㄧ粨鏋勫寲杈撳嚭銆傜紪璇戝櫒璇婃柇鐨勬牸寮忚缃皢鍙嶆槧閿欒灞傛缁撴瀯銆傛湁鍏宠缁嗕俊鎭紝璇峰弬闃?https://aka.ms/cpp/structured-output銆?
+          姝ｅ湪鍒涘缓鐩綍鈥淓:\\jpeg_VS2022\\build\\CMakeFiles\\CMakeScratch\\TryCompile-y14mia\\Debug\\鈥濄€?
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_c0b55.dir\\Debug\\cmTC_c0b55.tlog\\鈥濄€?
+        InitializeBuildStatus:
+          姝ｅ湪鍒涘缓鈥渃mTC_c0b55.dir\\Debug\\cmTC_c0b55.tlog\\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
+          姝ｅ湪瀵光€渃mTC_c0b55.dir\\Debug\\cmTC_c0b55.tlog\\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
+        ClCompile:
+          d:\\Microsoft Visual Studio 17.0\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_c0b55.dir\\Debug\\\\" /Fd"cmTC_c0b55.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "E:\\jpeg_VS2022\\build\\CMakeFiles\\CMakeScratch\\TryCompile-y14mia\\UNSIGNED_LONG.c"
+          鐢ㄤ簬 x64 鐨?Microsoft (R) C/C++ 浼樺寲缂栬瘧鍣?19.40.33811 鐗?
+          鐗堟潈鎵€鏈?C) Microsoft Corporation銆備繚鐣欐墍鏈夋潈鍒┿€?
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_c0b55.dir\\Debug\\\\" /Fd"cmTC_c0b55.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "E:\\jpeg_VS2022\\build\\CMakeFiles\\CMakeScratch\\TryCompile-y14mia\\UNSIGNED_LONG.c"
+          UNSIGNED_LONG.c
+        Link:
+          d:\\Microsoft Visual Studio 17.0\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"E:\\jpeg_VS2022\\build\\CMakeFiles\\CMakeScratch\\TryCompile-y14mia\\Debug\\cmTC_c0b55.exe" /INCREMENTAL /ILK:"cmTC_c0b55.dir\\Debug\\cmTC_c0b55.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:/jpeg_VS2022/build/CMakeFiles/CMakeScratch/TryCompile-y14mia/Debug/cmTC_c0b55.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:/jpeg_VS2022/build/CMakeFiles/CMakeScratch/TryCompile-y14mia/Debug/cmTC_c0b55.lib" /MACHINE:X64  /machine:x64 cmTC_c0b55.dir\\Debug\\UNSIGNED_LONG.obj
+          cmTC_c0b55.vcxproj -> E:\\jpeg_VS2022\\build\\CMakeFiles\\CMakeScratch\\TryCompile-y14mia\\Debug\\cmTC_c0b55.exe
+        FinalizeBuildStatus:
+          姝ｅ湪鍒犻櫎鏂囦欢鈥渃mTC_c0b55.dir\\Debug\\cmTC_c0b55.tlog\\unsuccessfulbuild鈥濄€?
+          姝ｅ湪瀵光€渃mTC_c0b55.dir\\Debug\\cmTC_c0b55.tlog\\cmTC_c0b55.lastbuildstate鈥濇墽琛?Touch 浠诲姟銆?
+        宸插畬鎴愮敓鎴愰」鐩€淓:\\jpeg_VS2022\\build\\CMakeFiles\\CMakeScratch\\TryCompile-y14mia\\cmTC_c0b55.vcxproj鈥?榛樿鐩爣)鐨勬搷浣溿€?
+        
+        宸叉垚鍔熺敓鎴愩€?
+            0 涓鍛?
+            0 涓敊璇?
+        
+        宸茬敤鏃堕棿 00:00:00.60
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.29/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "CMakeLists.txt:462 (check_include_files)"
+    checks:
+      - "Looking for include file intrin.h"
+    directories:
+      source: "E:/jpeg_VS2022/build/CMakeFiles/CMakeScratch/TryCompile-zr6w5c"
+      binary: "E:/jpeg_VS2022/build/CMakeFiles/CMakeScratch/TryCompile-zr6w5c"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>"
+    buildResult:
+      variable: "HAVE_INTRIN_H"
+      cached: true
+      stdout: |
+        Change Dir: 'E:/jpeg_VS2022/build/CMakeFiles/CMakeScratch/TryCompile-zr6w5c'
+        
+        Run Build Command(s): "d:/Microsoft Visual Studio 17.0/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_24770.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        閫傜敤浜?.NET Framework MSBuild 鐗堟湰 17.10.4+10fbfbf2e
+        鐢熸垚鍚姩鏃堕棿涓?2024/6/26 21:26:54銆?
+        
+        鑺傜偣 1 涓婄殑椤圭洰鈥淓:\\jpeg_VS2022\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zr6w5c\\cmTC_24770.vcxproj鈥?榛樿鐩爣)銆?
+        PrepareForBuild:
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_24770.dir\\Debug\\鈥濄€?
+          宸插惎鐢ㄧ粨鏋勫寲杈撳嚭銆傜紪璇戝櫒璇婃柇鐨勬牸寮忚缃皢鍙嶆槧閿欒灞傛缁撴瀯銆傛湁鍏宠缁嗕俊鎭紝璇峰弬闃?https://aka.ms/cpp/structured-output銆?
+          姝ｅ湪鍒涘缓鐩綍鈥淓:\\jpeg_VS2022\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zr6w5c\\Debug\\鈥濄€?
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_24770.dir\\Debug\\cmTC_24770.tlog\\鈥濄€?
+        InitializeBuildStatus:
+          姝ｅ湪鍒涘缓鈥渃mTC_24770.dir\\Debug\\cmTC_24770.tlog\\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
+          姝ｅ湪瀵光€渃mTC_24770.dir\\Debug\\cmTC_24770.tlog\\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
+        ClCompile:
+          d:\\Microsoft Visual Studio 17.0\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_24770.dir\\Debug\\\\" /Fd"cmTC_24770.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "E:\\jpeg_VS2022\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zr6w5c\\HAVE_INTRIN_H.c"
+          鐢ㄤ簬 x64 鐨?Microsoft (R) C/C++ 浼樺寲缂栬瘧鍣?19.40.33811 鐗?
+          鐗堟潈鎵€鏈?C) Microsoft Corporation銆備繚鐣欐墍鏈夋潈鍒┿€?
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_24770.dir\\Debug\\\\" /Fd"cmTC_24770.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "E:\\jpeg_VS2022\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zr6w5c\\HAVE_INTRIN_H.c"
+          HAVE_INTRIN_H.c
+        Link:
+          d:\\Microsoft Visual Studio 17.0\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"E:\\jpeg_VS2022\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zr6w5c\\Debug\\cmTC_24770.exe" /INCREMENTAL /ILK:"cmTC_24770.dir\\Debug\\cmTC_24770.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:/jpeg_VS2022/build/CMakeFiles/CMakeScratch/TryCompile-zr6w5c/Debug/cmTC_24770.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:/jpeg_VS2022/build/CMakeFiles/CMakeScratch/TryCompile-zr6w5c/Debug/cmTC_24770.lib" /MACHINE:X64  /machine:x64 cmTC_24770.dir\\Debug\\HAVE_INTRIN_H.obj
+          cmTC_24770.vcxproj -> E:\\jpeg_VS2022\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zr6w5c\\Debug\\cmTC_24770.exe
+        FinalizeBuildStatus:
+          姝ｅ湪鍒犻櫎鏂囦欢鈥渃mTC_24770.dir\\Debug\\cmTC_24770.tlog\\unsuccessfulbuild鈥濄€?
+          姝ｅ湪瀵光€渃mTC_24770.dir\\Debug\\cmTC_24770.tlog\\cmTC_24770.lastbuildstate鈥濇墽琛?Touch 浠诲姟銆?
+        宸插畬鎴愮敓鎴愰」鐩€淓:\\jpeg_VS2022\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zr6w5c\\cmTC_24770.vcxproj鈥?榛樿鐩爣)鐨勬搷浣溿€?
+        
+        宸叉垚鍔熺敓鎴愩€?
+            0 涓鍛?
+            0 涓敊璇?
+        
+        宸茬敤鏃堕棿 00:00:00.63
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "D:/CMake/share/cmake-3.29/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "CMakeLists.txt:517 (check_c_source_compiles)"
+    checks:
+      - "Performing Test INLINE_WORKS"
+    directories:
+      source: "E:/jpeg_VS2022/build/CMakeFiles/CMakeScratch/TryCompile-9ij4cs"
+      binary: "E:/jpeg_VS2022/build/CMakeFiles/CMakeScratch/TryCompile-9ij4cs"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>"
+    buildResult:
+      variable: "INLINE_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: 'E:/jpeg_VS2022/build/CMakeFiles/CMakeScratch/TryCompile-9ij4cs'
+        
+        Run Build Command(s): "d:/Microsoft Visual Studio 17.0/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_e9c28.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        閫傜敤浜?.NET Framework MSBuild 鐗堟湰 17.10.4+10fbfbf2e
+        鐢熸垚鍚姩鏃堕棿涓?2024/6/26 21:26:55銆?
+        
+        鑺傜偣 1 涓婄殑椤圭洰鈥淓:\\jpeg_VS2022\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9ij4cs\\cmTC_e9c28.vcxproj鈥?榛樿鐩爣)銆?
+        PrepareForBuild:
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_e9c28.dir\\Debug\\鈥濄€?
+          宸插惎鐢ㄧ粨鏋勫寲杈撳嚭銆傜紪璇戝櫒璇婃柇鐨勬牸寮忚缃皢鍙嶆槧閿欒灞傛缁撴瀯銆傛湁鍏宠缁嗕俊鎭紝璇峰弬闃?https://aka.ms/cpp/structured-output銆?
+          姝ｅ湪鍒涘缓鐩綍鈥淓:\\jpeg_VS2022\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9ij4cs\\Debug\\鈥濄€?
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_e9c28.dir\\Debug\\cmTC_e9c28.tlog\\鈥濄€?
+        InitializeBuildStatus:
+          姝ｅ湪鍒涘缓鈥渃mTC_e9c28.dir\\Debug\\cmTC_e9c28.tlog\\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
+          姝ｅ湪瀵光€渃mTC_e9c28.dir\\Debug\\cmTC_e9c28.tlog\\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
+        ClCompile:
+          d:\\Microsoft Visual Studio 17.0\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D INLINE_WORKS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_e9c28.dir\\Debug\\\\" /Fd"cmTC_e9c28.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "E:\\jpeg_VS2022\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9ij4cs\\src.c"
+          鐢ㄤ簬 x64 鐨?Microsoft (R) C/C++ 浼樺寲缂栬瘧鍣?19.40.33811 鐗?
+          鐗堟潈鎵€鏈?C) Microsoft Corporation銆備繚鐣欐墍鏈夋潈鍒┿€?
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D INLINE_WORKS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_e9c28.dir\\Debug\\\\" /Fd"cmTC_e9c28.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "E:\\jpeg_VS2022\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9ij4cs\\src.c"
+          src.c
+        Link:
+          d:\\Microsoft Visual Studio 17.0\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"E:\\jpeg_VS2022\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9ij4cs\\Debug\\cmTC_e9c28.exe" /INCREMENTAL /ILK:"cmTC_e9c28.dir\\Debug\\cmTC_e9c28.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:/jpeg_VS2022/build/CMakeFiles/CMakeScratch/TryCompile-9ij4cs/Debug/cmTC_e9c28.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:/jpeg_VS2022/build/CMakeFiles/CMakeScratch/TryCompile-9ij4cs/Debug/cmTC_e9c28.lib" /MACHINE:X64  /machine:x64 cmTC_e9c28.dir\\Debug\\src.obj
+          cmTC_e9c28.vcxproj -> E:\\jpeg_VS2022\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9ij4cs\\Debug\\cmTC_e9c28.exe
+        FinalizeBuildStatus:
+          姝ｅ湪鍒犻櫎鏂囦欢鈥渃mTC_e9c28.dir\\Debug\\cmTC_e9c28.tlog\\unsuccessfulbuild鈥濄€?
+          姝ｅ湪瀵光€渃mTC_e9c28.dir\\Debug\\cmTC_e9c28.tlog\\cmTC_e9c28.lastbuildstate鈥濇墽琛?Touch 浠诲姟銆?
+        宸插畬鎴愮敓鎴愰」鐩€淓:\\jpeg_VS2022\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9ij4cs\\cmTC_e9c28.vcxproj鈥?榛樿鐩爣)鐨勬搷浣溿€?
+        
+        宸叉垚鍔熺敓鎴愩€?
+            0 涓鍛?
+            0 涓敊璇?
+        
+        宸茬敤鏃堕棿 00:00:00.60
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "D:/CMake/share/cmake-3.29/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "CMakeLists.txt:534 (check_c_source_compiles)"
+    checks:
+      - "Performing Test HAVE_THREAD_LOCAL"
+    directories:
+      source: "E:/jpeg_VS2022/build/CMakeFiles/CMakeScratch/TryCompile-xu2c49"
+      binary: "E:/jpeg_VS2022/build/CMakeFiles/CMakeScratch/TryCompile-xu2c49"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>"
+    buildResult:
+      variable: "HAVE_THREAD_LOCAL"
+      cached: true
+      stdout: |
+        Change Dir: 'E:/jpeg_VS2022/build/CMakeFiles/CMakeScratch/TryCompile-xu2c49'
+        
+        Run Build Command(s): "d:/Microsoft Visual Studio 17.0/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_1e72b.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        閫傜敤浜?.NET Framework MSBuild 鐗堟湰 17.10.4+10fbfbf2e
+        鐢熸垚鍚姩鏃堕棿涓?2024/6/26 21:26:56銆?
+        
+        鑺傜偣 1 涓婄殑椤圭洰鈥淓:\\jpeg_VS2022\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xu2c49\\cmTC_1e72b.vcxproj鈥?榛樿鐩爣)銆?
+        PrepareForBuild:
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_1e72b.dir\\Debug\\鈥濄€?
+          宸插惎鐢ㄧ粨鏋勫寲杈撳嚭銆傜紪璇戝櫒璇婃柇鐨勬牸寮忚缃皢鍙嶆槧閿欒灞傛缁撴瀯銆傛湁鍏宠缁嗕俊鎭紝璇峰弬闃?https://aka.ms/cpp/structured-output銆?
+          姝ｅ湪鍒涘缓鐩綍鈥淓:\\jpeg_VS2022\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xu2c49\\Debug\\鈥濄€?
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_1e72b.dir\\Debug\\cmTC_1e72b.tlog\\鈥濄€?
+        InitializeBuildStatus:
+          姝ｅ湪鍒涘缓鈥渃mTC_1e72b.dir\\Debug\\cmTC_1e72b.tlog\\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
+          姝ｅ湪瀵光€渃mTC_1e72b.dir\\Debug\\cmTC_1e72b.tlog\\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
+        ClCompile:
+          d:\\Microsoft Visual Studio 17.0\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_THREAD_LOCAL /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_1e72b.dir\\Debug\\\\" /Fd"cmTC_1e72b.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "E:\\jpeg_VS2022\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xu2c49\\src.c"
+          鐢ㄤ簬 x64 鐨?Microsoft (R) C/C++ 浼樺寲缂栬瘧鍣?19.40.33811 鐗?
+          鐗堟潈鎵€鏈?C) Microsoft Corporation銆備繚鐣欐墍鏈夋潈鍒┿€?
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_THREAD_LOCAL /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_1e72b.dir\\Debug\\\\" /Fd"cmTC_1e72b.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "E:\\jpeg_VS2022\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xu2c49\\src.c"
+          src.c
+        Link:
+          d:\\Microsoft Visual Studio 17.0\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"E:\\jpeg_VS2022\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xu2c49\\Debug\\cmTC_1e72b.exe" /INCREMENTAL /ILK:"cmTC_1e72b.dir\\Debug\\cmTC_1e72b.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:/jpeg_VS2022/build/CMakeFiles/CMakeScratch/TryCompile-xu2c49/Debug/cmTC_1e72b.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:/jpeg_VS2022/build/CMakeFiles/CMakeScratch/TryCompile-xu2c49/Debug/cmTC_1e72b.lib" /MACHINE:X64  /machine:x64 cmTC_1e72b.dir\\Debug\\src.obj
+          cmTC_1e72b.vcxproj -> E:\\jpeg_VS2022\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xu2c49\\Debug\\cmTC_1e72b.exe
+        FinalizeBuildStatus:
+          姝ｅ湪鍒犻櫎鏂囦欢鈥渃mTC_1e72b.dir\\Debug\\cmTC_1e72b.tlog\\unsuccessfulbuild鈥濄€?
+          姝ｅ湪瀵光€渃mTC_1e72b.dir\\Debug\\cmTC_1e72b.tlog\\cmTC_1e72b.lastbuildstate鈥濇墽琛?Touch 浠诲姟銆?
+        宸插畬鎴愮敓鎴愰」鐩€淓:\\jpeg_VS2022\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xu2c49\\cmTC_1e72b.vcxproj鈥?榛樿鐩爣)鐨勬搷浣溿€?
+        
+        宸叉垚鍔熺敓鎴愩€?
+            0 涓鍛?
+            0 涓敊璇?
+        
+        宸茬敤鏃堕棿 00:00:00.61
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.29/Modules/CheckLanguage.cmake:132 (message)"
+      - "simd/CMakeLists.txt:46 (check_language)"
+    checks:
+      - "Looking for a ASM_NASM compiler"
+    message: |
+      Looking for a ASM_NASM compiler passed with the following output:
+      -- Selecting Windows SDK version 10.0.22621.0 to target Windows 10.0.19045.
+      -- The ASM_NASM compiler identification is NASM
+      -- Found assembler: D:/NASM/nasm.exe
+      -- Configuring done (0.7s)
+      -- Generating done (0.0s)
+      -- Build files have been written to: E:/jpeg_VS2022/build/simd/CMakeFiles/CheckASM_NASM
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:1178 (message)"
+      - "D:/CMake/share/cmake-3.29/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "D:/CMake/share/cmake-3.29/Modules/CMakeDetermineASM_NASMCompiler.cmake:29 (include)"
+      - "simd/CMakeLists.txt:52 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is GNU using "--version" did not match "(GNU assembler)|(GCC)|(Free Software Foundation)":
+      NASM version 2.16.01 compiled on Dec 21 2022
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:1178 (message)"
+      - "D:/CMake/share/cmake-3.29/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "D:/CMake/share/cmake-3.29/Modules/CMakeDetermineASM_NASMCompiler.cmake:29 (include)"
+      - "simd/CMakeLists.txt:52 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is AppleClang using "--version" did not match "(Apple (clang|LLVM) version)":
+      NASM version 2.16.01 compiled on Dec 21 2022
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:1178 (message)"
+      - "D:/CMake/share/cmake-3.29/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "D:/CMake/share/cmake-3.29/Modules/CMakeDetermineASM_NASMCompiler.cmake:29 (include)"
+      - "simd/CMakeLists.txt:52 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is Clang using "--version" did not match "(clang version)":
+      NASM version 2.16.01 compiled on Dec 21 2022
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:1178 (message)"
+      - "D:/CMake/share/cmake-3.29/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "D:/CMake/share/cmake-3.29/Modules/CMakeDetermineASM_NASMCompiler.cmake:29 (include)"
+      - "simd/CMakeLists.txt:52 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is ARMClang using "--version" did not match "armclang":
+      NASM version 2.16.01 compiled on Dec 21 2022
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:1178 (message)"
+      - "D:/CMake/share/cmake-3.29/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "D:/CMake/share/cmake-3.29/Modules/CMakeDetermineASM_NASMCompiler.cmake:29 (include)"
+      - "simd/CMakeLists.txt:52 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is OrangeC using "--version" did not match "occ \\(OrangeC\\) Version":
+      NASM version 2.16.01 compiled on Dec 21 2022
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:1178 (message)"
+      - "D:/CMake/share/cmake-3.29/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "D:/CMake/share/cmake-3.29/Modules/CMakeDetermineASM_NASMCompiler.cmake:29 (include)"
+      - "simd/CMakeLists.txt:52 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is HP using "-V" did not match "HP C":
+      nasm: error: unrecognised option `-V'
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:1178 (message)"
+      - "D:/CMake/share/cmake-3.29/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "D:/CMake/share/cmake-3.29/Modules/CMakeDetermineASM_NASMCompiler.cmake:29 (include)"
+      - "simd/CMakeLists.txt:52 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is Intel using "--version" did not match "(ICC)":
+      NASM version 2.16.01 compiled on Dec 21 2022
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:1178 (message)"
+      - "D:/CMake/share/cmake-3.29/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "D:/CMake/share/cmake-3.29/Modules/CMakeDetermineASM_NASMCompiler.cmake:29 (include)"
+      - "simd/CMakeLists.txt:52 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is IntelLLVM using "--version" did not match "(Intel[^
+      ]+oneAPI)":
+      NASM version 2.16.01 compiled on Dec 21 2022
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:1178 (message)"
+      - "D:/CMake/share/cmake-3.29/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "D:/CMake/share/cmake-3.29/Modules/CMakeDetermineASM_NASMCompiler.cmake:29 (include)"
+      - "simd/CMakeLists.txt:52 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is SunPro using "-V" did not match "Sun C":
+      nasm: error: unrecognised option `-V'
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:1178 (message)"
+      - "D:/CMake/share/cmake-3.29/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "D:/CMake/share/cmake-3.29/Modules/CMakeDetermineASM_NASMCompiler.cmake:29 (include)"
+      - "simd/CMakeLists.txt:52 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is XL using "-qversion" did not match "XL C":
+      nasm: error: unrecognised option `-q'
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:1178 (message)"
+      - "D:/CMake/share/cmake-3.29/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "D:/CMake/share/cmake-3.29/Modules/CMakeDetermineASM_NASMCompiler.cmake:29 (include)"
+      - "simd/CMakeLists.txt:52 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is MSVC using "-?" did not match "Microsoft":
+      nasm: error: unrecognised option `-?'
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:1178 (message)"
+      - "D:/CMake/share/cmake-3.29/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "D:/CMake/share/cmake-3.29/Modules/CMakeDetermineASM_NASMCompiler.cmake:29 (include)"
+      - "simd/CMakeLists.txt:52 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is TI using "-h" did not match "Texas Instruments":
+      Usage: D:/NASM/nasm.exe [-@ response_file] [options...] [--] filename
+             D:/NASM/nasm.exe -v (or --v)
+      
+      Options (values in brackets indicate defaults):
+      
+          -h            show this text and exit (also --help)
+          -v (or --v)   print the NASM version number and exit
+          -@ file       response file; one command line option per line
+      
+          -o outfile    write output to outfile
+          --keep-all    output files will not be removed even if an error happens
+      
+          -Xformat      specify error reporting format (gnu or vc)
+          -s            redirect error messages to stdout
+          -Zfile        redirect error messages to file
+      
+          -M            generate Makefile dependencies on stdout
+          -MG           d:o, missing files assumed generated
+          -MF file      set Makefile dependency file
+          -MD file      assemble and generate dependencies
+          -MT file      dependency target name
+          -MQ file      dependency target name (quoted)
+          -MP           emit phony targets
+      
+          -f format     select output file format
+             bin                  Flat raw binary (MS-DOS, embedded, ...) [default]
+             ith                  Intel Hex encoded flat binary
+             srec                 Motorola S-records encoded flat binary
+             aout                 Linux a.out
+             aoutb                NetBSD/FreeBSD a.out
+             coff                 COFF (i386) (DJGPP, some Unix variants)
+             elf32                ELF32 (i386) (Linux, most Unix variants)
+             elf64                ELF64 (x86-64) (Linux, most Unix variants)
+             elfx32               ELFx32 (ELF32 for x86-64) (Linux)
+             as86                 as86 (bin86/dev86 toolchain)
+             obj                  Intel/Microsoft OMF (MS-DOS, OS/2, Win16)
+             win32                Microsoft extended COFF for Win32 (i386)
+             win64                Microsoft extended COFF for Win64 (x86-64)
+             ieee                 IEEE-695 (LADsoft variant) object file format
+             macho32              Mach-O i386 (Mach, including MacOS X and variants)
+             macho64              Mach-O x86-64 (Mach, including MacOS X and variants)
+             dbg                  Trace of all info passed to output stage
+             elf                  Legacy alias for "elf32"
+             macho                Legacy alias for "macho32"
+             win                  Legacy alias for "win32"
+      
+          -g            generate debugging information
+          -F format     select a debugging format (output format dependent)
+          -gformat      same as -g -F format
+             elf32:     dwarf     ELF32 (i386) dwarf (newer) [default]
+                        stabs     ELF32 (i386) stabs (older)
+             elf64:     dwarf     ELF64 (x86-64) dwarf (newer) [default]
+                        stabs     ELF64 (x86-64) stabs (older)
+             elfx32:    dwarf     ELFx32 (x86-64) dwarf (newer) [default]
+                        stabs     ELFx32 (x86-64) stabs (older)
+             obj:       borland   Borland Debug Records [default]
+             win32:     cv8       Codeview 8+ [default]
+             win64:     cv8       Codeview 8+ [default]
+             ieee:      ladsoft   LADsoft Debug Records [default]
+             macho32:   dwarf     Mach-O i386 dwarf for Darwin/MacOS [default]
+             macho64:   dwarf     Mach-O x86-64 dwarf for Darwin/MacOS [default]
+             dbg:       debug     Trace of all info passed to debug stage [default]
+      
+          -l listfile   write listing to a list file
+          -Lflags...    add optional information to the list file
+             -Lb        show builtin macro packages (standard and %use)
+             -Ld        show byte and repeat counts in decimal, not hex
+             -Le        show the preprocessed output
+             -Lf        ignore .nolist (force output)
+             -Lm        show multi-line macro calls with expanded parameters
+             -Lp        output a list file every pass, in case of errors
+             -Ls        show all single-line macro definitions
+             -Lw        flush the output after every line (very slow!)
+             -L+        enable all listing options except -Lw (very verbose!)
+      
+          -Oflags...    optimize opcodes, immediates and branch offsets
+             -O0        no optimization
+             -O1        minimal optimization
+             -Ox        multipass optimization (default)
+             -Ov        display the number of passes executed at the end
+          -t            assemble in limited SciTech TASM compatible mode
+      
+          -E (or -e)    preprocess only (writes output to stdout by default)
+          -a            don't preprocess (assemble only)
+          -Ipath        add a pathname to the include file path
+          -Pfile        pre-include a file (also --include)
+          -Dmacro[=str] pre-define a macro
+          -Umacro       undefine a macro
+         --pragma str   pre-executes a specific %%pragma
+         --before str   add line (usually a preprocessor statement) before the input
+         --no-line      ignore %line directives in input
+      
+         --prefix str   prepend the given string to the names of all extern,
+                        common and global symbols (also --gprefix)
+         --suffix str   append the given string to the names of all extern,
+                        common and global symbols (also --gprefix)
+         --lprefix str  prepend the given string to local symbols
+         --lpostfix str append the given string to local symbols
+      
+         --reproducible attempt to produce run-to-run identical output
+      
+          -w+x          enable warning x (also -Wx)
+          -w-x          disable warning x (also -Wno-x)
+          -w[+-]error   promote all warnings to errors (also -Werror)
+          -w[+-]error=x promote warning x to errors (also -Werror=x)
+             all                  all possible warnings
+             db-empty             no operand for data declaration [on]
+             ea                   all warnings prefixed with "ea-"
+             ea-absolute          absolute address cannot be RIP-relative [on]
+             ea-dispsize          displacement size ignored on absolute address [on]
+             float                all warnings prefixed with "float-"
+             float-denorm         floating point denormal [off]
+             float-overflow       floating point overflow [on]
+             float-toolong        too many digits in floating-point number [on]
+             float-underflow      floating point underflow [off]
+             forward              forward reference may have unpredictable results [on]
+             label                all warnings prefixed with "label-"
+             label-orphan         labels alone on lines without trailing `:' [on]
+             label-redef          label redefined to an identical value [off]
+             label-redef-late     label (re)defined during code generation [error]
+             number-overflow      numeric constant does not fit [on]
+             obsolete             all warnings prefixed with "obsolete-"
+             obsolete-nop         instruction obsolete and is a noop on the target CPU [on]
+             obsolete-removed     instruction obsolete and removed on the target CPU [on]
+             obsolete-valid       instruction obsolete but valid on the target CPU [on]
+             phase                phase error during stabilization [off]
+             pp                   all warnings prefixed with "pp-"
+             pp-else              all warnings prefixed with "pp-else-"
+             pp-else-elif         %elif after %else [on]
+             pp-else-else         %else after %else [on]
+             pp-empty-braces      empty %{} construct [on]
+             pp-environment       nonexistent environment variable [on]
+             pp-macro             all warnings prefixed with "pp-macro-"
+             pp-macro-def         all warnings prefixed with "pp-macro-def-"
+             pp-macro-def-case-single single-line macro defined both case sensitive and insensitive [on]
+             pp-macro-def-greedy-single single-line macro [on]
+             pp-macro-def-param-single single-line macro defined with and without parameters [error]
+             pp-macro-defaults    macros with more default than optional parameters [on]
+             pp-macro-params      all warnings prefixed with "pp-macro-params-"
+             pp-macro-params-legacy improperly calling multi-line macro for legacy support [on]
+             pp-macro-params-multi multi-line macro calls with wrong parameter count [on]
+             pp-macro-params-single single-line macro calls with wrong parameter count [on]
+             pp-macro-redef-multi redefining multi-line macro [on]
+             pp-open              all warnings prefixed with "pp-open-"
+             pp-open-braces       unterminated %{...} [on]
+             pp-open-brackets     unterminated %[...] [on]
+             pp-open-string       unterminated string [on]
+             pp-rep-negative      regative %rep count [on]
+             pp-sel-range         %sel() argument out of range [on]
+             pp-trailing          trailing garbage ignored [on]
+             pragma               all warnings prefixed with "pragma-"
+             pragma-bad           malformed %pragma [off]
+             pragma-empty         empty %pragma directive [off]
+             pragma-na            %pragma not applicable to this compilation [off]
+             pragma-unknown       unknown %pragma facility or directive [off]
+             prefix               all warnings prefixed with "prefix-"
+             prefix-bnd           invalid BND prefix [on]
+             prefix-hle           invalid HLE prefix [on]
+             prefix-lock          LOCK prefix on unlockable instructions [on]
+             prefix-opsize        invalid operand size prefix [on]
+             prefix-seg           segment prefix ignored in 64-bit mode [on]
+             ptr                  non-NASM keyword used in other assemblers [on]
+             regsize              register size specification ignored [on]
+             unknown-warning      unknown warning in -W/-w or warning directive [off]
+             user                 %warning directives [on]
+             warn-stack-empty     warning stack empty [on]
+             zeroing              RESx in initialized section becomes zero [on]
+             zext-reloc           relocation zero-extended to match output format [on]
+             other                any warning not specifically mentioned above [on]
+      
+         --limit-X val  set execution limit X
+             passes               total number of passes [unlimited]
+             stalled-passes       number of passes without forward progress [1000]
+             macro-levels         levels of macro expansion [10000]
+             macro-tokens         tokens processed during single-lime macro expansion [10000000]
+             mmacros              multi-line macros before final return [100000]
+             rep                  %rep count [1000000]
+             eval                 expression evaluation descent [8192]
+             lines                total source lines processed [2000000000]
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:1178 (message)"
+      - "D:/CMake/share/cmake-3.29/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "D:/CMake/share/cmake-3.29/Modules/CMakeDetermineASM_NASMCompiler.cmake:29 (include)"
+      - "simd/CMakeLists.txt:52 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is TIClang using "--version" did not match "(TI (.*) Clang Compiler)":
+      NASM version 2.16.01 compiled on Dec 21 2022
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:1178 (message)"
+      - "D:/CMake/share/cmake-3.29/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "D:/CMake/share/cmake-3.29/Modules/CMakeDetermineASM_NASMCompiler.cmake:29 (include)"
+      - "simd/CMakeLists.txt:52 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is IAR using "" did not match "IAR Assembler":
+      nasm: fatal: no input file specified
+      Type D:/NASM/nasm.exe -h for help.
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:1178 (message)"
+      - "D:/CMake/share/cmake-3.29/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "D:/CMake/share/cmake-3.29/Modules/CMakeDetermineASM_NASMCompiler.cmake:29 (include)"
+      - "simd/CMakeLists.txt:52 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is ARMCC using "" did not match "(ARM Compiler)|(ARM Assembler)|(Arm Compiler)":
+      nasm: fatal: no input file specified
+      Type D:/NASM/nasm.exe -h for help.
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:1165 (message)"
+      - "D:/CMake/share/cmake-3.29/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "D:/CMake/share/cmake-3.29/Modules/CMakeDetermineASM_NASMCompiler.cmake:29 (include)"
+      - "simd/CMakeLists.txt:52 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is NASM using "-v" matched "(NASM version)":
+      NASM version 2.16.01 compiled on Dec 21 2022
+...

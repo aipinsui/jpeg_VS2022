@@ -1,0 +1,25 @@
+# CMake generation dependency list for this directory.
+D:/CMake/share/cmake-3.29/Modules/CMakeASMCompiler.cmake.in
+D:/CMake/share/cmake-3.29/Modules/CMakeASMInformation.cmake
+D:/CMake/share/cmake-3.29/Modules/CMakeASM_NASMInformation.cmake
+D:/CMake/share/cmake-3.29/Modules/CMakeCompilerIdDetection.cmake
+D:/CMake/share/cmake-3.29/Modules/CMakeDetermineASMCompiler.cmake
+D:/CMake/share/cmake-3.29/Modules/CMakeDetermineASM_NASMCompiler.cmake
+D:/CMake/share/cmake-3.29/Modules/CMakeDetermineCompiler.cmake
+D:/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake
+D:/CMake/share/cmake-3.29/Modules/CMakeDetermineSystem.cmake
+D:/CMake/share/cmake-3.29/Modules/CMakeFindBinUtils.cmake
+D:/CMake/share/cmake-3.29/Modules/CMakeGenericSystem.cmake
+D:/CMake/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake
+D:/CMake/share/cmake-3.29/Modules/CMakeSystem.cmake.in
+D:/CMake/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake
+D:/CMake/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake
+D:/CMake/share/cmake-3.29/Modules/CMakeTestASMCompiler.cmake
+D:/CMake/share/cmake-3.29/Modules/CMakeTestASM_NASMCompiler.cmake
+D:/CMake/share/cmake-3.29/Modules/Platform/Windows-Initialize.cmake
+D:/CMake/share/cmake-3.29/Modules/Platform/Windows.cmake
+D:/CMake/share/cmake-3.29/Modules/Platform/WindowsPaths.cmake
+D:\CMake\share\cmake-3.29\Templates\MSBuild\nasm.props.in
+E:/jpeg_VS2022/build/simd/CMakeFiles/CheckASM_NASM/CMakeFiles/3.29.6/CMakeASM_NASMCompiler.cmake
+E:/jpeg_VS2022/build/simd/CMakeFiles/CheckASM_NASM/CMakeFiles/3.29.6/CMakeSystem.cmake
+E:/jpeg_VS2022/build/simd/CMakeFiles/CheckASM_NASM/CMakeLists.txt
