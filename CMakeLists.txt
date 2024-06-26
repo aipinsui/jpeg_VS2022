@@ -1,9 +1,4 @@
 cmake_minimum_required(VERSION 2.8.12...3.28)
-# When using CMake 3.4 and later, don't export symbols from executables unless
-# the CMAKE_ENABLE_EXPORTS variable is set.
-if(POLICY CMP0065)
-  cmake_policy(SET CMP0065 NEW)
-endif()
 
 if(CMAKE_EXECUTABLE_SUFFIX)
   set(CMAKE_EXECUTABLE_SUFFIX_TMP ${CMAKE_EXECUTABLE_SUFFIX})
@@ -405,6 +400,8 @@ if(MSVC)
       CMAKE_VERSION VERSION_GREATER "3.15")
       if(CMAKE_BUILD_TYPE_UC STREQUAL "DEBUG")
         set(CMAKE_MSVC_RUNTIME_LIBRARY MultiThreadedDebug)
+      elseif(MSVC_IDE)
+        set(CMAKE_MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>")
       else()
         set(CMAKE_MSVC_RUNTIME_LIBRARY MultiThreaded)
       endif()
@@ -421,7 +418,7 @@ if(MSVC)
   add_definitions(-D_CRT_NONSTDC_NO_WARNINGS)
 endif()
 
-if(CMAKE_COMPILER_IS_GNUCC OR CMAKE_C_COMPILER_ID STREQUAL "Clang")
+if(CMAKE_COMPILER_IS_GNUCC OR CMAKE_C_COMPILER_ID MATCHES "Clang")
   # Use the maximum optimization level for release builds
   foreach(var CMAKE_C_FLAGS_RELEASE CMAKE_C_FLAGS_RELWITHDEBINFO)
     if(${var} MATCHES "-O2")
@@ -473,13 +470,13 @@ if(UNIX)
     check_c_source_runs("
       #include <stdio.h>
       #include <stdlib.h>
-      int is_shifting_signed (long arg) {
+      static int is_shifting_signed (long arg) {
         long res = arg >> 4;
         if (res == -0x7F7E80CL)
           return 1; /* right shift is signed */
         /* see if unsigned-shift hack will fix it. */
         /* we can't just test exact value since it depends on width of long... */
-        res |= (~0L) << (32-4);
+        res |= 0xFFFFFFFFL << (32-4);
         if (res == -0x7F7E80CL)
           return 0; /* right shift is unsigned */
         printf(\"Right shift isn't acting as I expect it to.\\\\n\");
@@ -492,8 +489,8 @@ if(UNIX)
   endif()
 endif()
 
-if(NOT MSVC OR CMAKE_C_COMPILER_ID STREQUAL "Clang")
-  check_c_source_compiles("const int __attribute__((visibility(\"hidden\"))) table[1] = { 0 }; int main(void) { return table[0]; }"
+if(NOT MSVC OR CMAKE_C_COMPILER_ID MATCHES "Clang")
+  check_c_source_compiles("extern const int table[1]; const int __attribute__((visibility(\"hidden\"))) table[1] = { 0 }; int main(void) { return table[0]; }"
     HIDDEN_WORKS)
   if(HIDDEN_WORKS)
     set(HIDDEN "__attribute__((visibility(\"hidden\")))")
@@ -534,7 +531,7 @@ if(MSVC)
 else()
   set(THREAD_LOCAL "__thread")
 endif()
-check_c_source_compiles("${THREAD_LOCAL} int i;  int main(void) { i = 0;  return i; }"
+check_c_source_compiles("static ${THREAD_LOCAL} int i;  int main(void) { i = 0;  return i; }"
   HAVE_THREAD_LOCAL)
 if(HAVE_THREAD_LOCAL)
   message(STATUS "THREAD_LOCAL = ${THREAD_LOCAL}")
@@ -930,7 +927,7 @@ if(CPU_TYPE STREQUAL "x86_64" OR CPU_TYPE STREQUAL "i386")
     set(DEFAULT_FLOATTEST8 no-fp-contract)
   endif()
 elseif(CPU_TYPE STREQUAL "powerpc" OR CPU_TYPE STREQUAL "arm64")
-  if(CMAKE_C_COMPILER_ID STREQUAL "Clang")
+  if(CMAKE_C_COMPILER_ID MATCHES "Clang")
     if(CMAKE_C_COMPILER_VERSION VERSION_EQUAL 14.0.0 OR
       CMAKE_C_COMPILER_VERSION VERSION_GREATER 14.0.0)
       set(DEFAULT_FLOATTEST8 fp-contract)
@@ -972,7 +969,7 @@ endif()
 if(CPU_TYPE STREQUAL "x86_64")
   set(DEFAULT_FLOATTEST12 no-fp-contract)
 elseif(CPU_TYPE STREQUAL "powerpc" OR CPU_TYPE STREQUAL "arm64")
-  if(CMAKE_C_COMPILER_ID STREQUAL "Clang")
+  if(CMAKE_C_COMPILER_ID MATCHES "Clang")
     if(CMAKE_C_COMPILER_VERSION VERSION_EQUAL 14.0.0 OR
       CMAKE_C_COMPILER_VERSION VERSION_GREATER 14.0.0)
       set(DEFAULT_FLOATTEST12 fp-contract)
@@ -1227,7 +1224,7 @@ foreach(libtype ${TEST_LIBTYPES})
       set(MD5_PPM_3x2_FLOAT_NO_FP_CONTRACT ${MD5_PPM_3x2_FLOAT_SSE})
       set(MD5_JPEG_3x2_FLOAT_PROG_FP_CONTRACT
         ${MD5_JPEG_3x2_FLOAT_PROG_NO_FP_CONTRACT})
-      if(CMAKE_C_COMPILER_ID STREQUAL "Clang")
+      if(CMAKE_C_COMPILER_ID MATCHES "Clang")
         set(MD5_PPM_3x2_FLOAT_FP_CONTRACT 2da9de6ae869e88b8372de815d366b03)
       else()
         set(MD5_PPM_3x2_FLOAT_FP_CONTRACT ${MD5_PPM_3x2_FLOAT_SSE})
@@ -1299,7 +1296,7 @@ foreach(libtype ${TEST_LIBTYPES})
       set(MD5_PPM_3x2_FLOAT_NO_FP_CONTRACT f6bfab038438ed8f5522fbd33595dcdc)
       set(MD5_JPEG_3x2_FLOAT_PROG_FP_CONTRACT
         ${MD5_JPEG_3x2_FLOAT_PROG_NO_FP_CONTRACT})
-      if(CMAKE_C_COMPILER_ID STREQUAL "Clang")
+      if(CMAKE_C_COMPILER_ID MATCHES "Clang")
         set(MD5_PPM_3x2_FLOAT_FP_CONTRACT ${MD5_PPM_3x2_FLOAT_NO_FP_CONTRACT})
       else()
         set(MD5_PPM_3x2_FLOAT_FP_CONTRACT 0e917a34193ef976b679a6b069b1be26)
@@ -1730,21 +1727,21 @@ if(WITH_TURBOJPEG)
   if(ENABLE_SHARED)
     install(TARGETS turbojpeg EXPORT ${CMAKE_PROJECT_NAME}Targets
       INCLUDES DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}
-      ARCHIVE DESTINATION ${CMAKE_INSTALL_LIBDIR}
-      LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
-      RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR})
+      ARCHIVE DESTINATION ${CMAKE_INSTALL_LIBDIR} COMPONENT lib
+      LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR} COMPONENT lib
+      RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR} COMPONENT bin)
     install(TARGETS tjbench
-      RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR})
+      RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR} COMPONENT bin)
     if(NOT CMAKE_VERSION VERSION_LESS "3.1" AND MSVC AND
       CMAKE_C_LINKER_SUPPORTS_PDB)
       install(FILES "$<TARGET_PDB_FILE:turbojpeg>"
-        DESTINATION ${CMAKE_INSTALL_BINDIR} OPTIONAL)
+        DESTINATION ${CMAKE_INSTALL_BINDIR} COMPONENT bin OPTIONAL)
     endif()
   endif()
   if(ENABLE_STATIC)
     install(TARGETS turbojpeg-static EXPORT ${CMAKE_PROJECT_NAME}Targets
       INCLUDES DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}
-      ARCHIVE DESTINATION ${CMAKE_INSTALL_LIBDIR})
+      ARCHIVE DESTINATION ${CMAKE_INSTALL_LIBDIR} COMPONENT lib)
     if(NOT ENABLE_SHARED)
       if(GENERATOR_IS_MULTI_CONFIG)
         set(DIR "${CMAKE_CURRENT_BINARY_DIR}/\${CMAKE_INSTALL_CONFIG_NAME}")
@@ -1752,17 +1749,17 @@ if(WITH_TURBOJPEG)
         set(DIR ${CMAKE_CURRENT_BINARY_DIR})
       endif()
       install(PROGRAMS ${DIR}/tjbench-static${EXE}
-        DESTINATION ${CMAKE_INSTALL_BINDIR} RENAME tjbench${EXE})
+        DESTINATION ${CMAKE_INSTALL_BINDIR} COMPONENT bin RENAME tjbench${EXE})
     endif()
   endif()
   install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/turbojpeg.h
-    DESTINATION ${CMAKE_INSTALL_INCLUDEDIR})
+    DESTINATION ${CMAKE_INSTALL_INCLUDEDIR} COMPONENT include)
 endif()
 
 if(ENABLE_STATIC)
   install(TARGETS jpeg-static EXPORT ${CMAKE_PROJECT_NAME}Targets
     INCLUDES DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}
-    ARCHIVE DESTINATION ${CMAKE_INSTALL_LIBDIR})
+    ARCHIVE DESTINATION ${CMAKE_INSTALL_LIBDIR} COMPONENT lib)
   if(NOT ENABLE_SHARED)
     if(GENERATOR_IS_MULTI_CONFIG)
       set(DIR "${CMAKE_CURRENT_BINARY_DIR}/\${CMAKE_INSTALL_CONFIG_NAME}")
@@ -1770,15 +1767,16 @@ if(ENABLE_STATIC)
       set(DIR ${CMAKE_CURRENT_BINARY_DIR})
     endif()
     install(PROGRAMS ${DIR}/cjpeg-static${EXE}
-      DESTINATION ${CMAKE_INSTALL_BINDIR} RENAME cjpeg${EXE})
+      DESTINATION ${CMAKE_INSTALL_BINDIR} COMPONENT bin RENAME cjpeg${EXE})
     install(PROGRAMS ${DIR}/djpeg-static${EXE}
-      DESTINATION ${CMAKE_INSTALL_BINDIR} RENAME djpeg${EXE})
+      DESTINATION ${CMAKE_INSTALL_BINDIR} COMPONENT bin RENAME djpeg${EXE})
     install(PROGRAMS ${DIR}/jpegtran-static${EXE}
-      DESTINATION ${CMAKE_INSTALL_BINDIR} RENAME jpegtran${EXE})
+      DESTINATION ${CMAKE_INSTALL_BINDIR} COMPONENT bin RENAME jpegtran${EXE})
   endif()
 endif()
 
-install(TARGETS rdjpgcom wrjpgcom RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR})
+install(TARGETS rdjpgcom wrjpgcom
+  RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR} COMPONENT bin)
 
 install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/README.ijg
   ${CMAKE_CURRENT_SOURCE_DIR}/README.md ${CMAKE_CURRENT_SOURCE_DIR}/example.c
@@ -1786,10 +1784,11 @@ install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/README.ijg
   ${CMAKE_CURRENT_SOURCE_DIR}/libjpeg.txt
   ${CMAKE_CURRENT_SOURCE_DIR}/structure.txt
   ${CMAKE_CURRENT_SOURCE_DIR}/usage.txt ${CMAKE_CURRENT_SOURCE_DIR}/wizard.txt
-  ${CMAKE_CURRENT_SOURCE_DIR}/LICENSE.md DESTINATION ${CMAKE_INSTALL_DOCDIR})
+  ${CMAKE_CURRENT_SOURCE_DIR}/LICENSE.md DESTINATION ${CMAKE_INSTALL_DOCDIR}
+  COMPONENT doc)
 if(WITH_JAVA)
   install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/java/TJExample.java
-    DESTINATION ${CMAKE_INSTALL_DOCDIR})
+    DESTINATION ${CMAKE_INSTALL_DOCDIR} COMPONENT doc)
 endif()
 
 if(UNIX OR MINGW)
@@ -1797,26 +1796,28 @@ if(UNIX OR MINGW)
     ${CMAKE_CURRENT_SOURCE_DIR}/djpeg.1 ${CMAKE_CURRENT_SOURCE_DIR}/jpegtran.1
     ${CMAKE_CURRENT_SOURCE_DIR}/rdjpgcom.1
     ${CMAKE_CURRENT_SOURCE_DIR}/wrjpgcom.1
-    DESTINATION ${CMAKE_INSTALL_MANDIR}/man1)
+    DESTINATION ${CMAKE_INSTALL_MANDIR}/man1 COMPONENT man)
 endif()
 install(FILES ${CMAKE_CURRENT_BINARY_DIR}/pkgscripts/libjpeg.pc
-  DESTINATION ${CMAKE_INSTALL_LIBDIR}/pkgconfig)
+  DESTINATION ${CMAKE_INSTALL_LIBDIR}/pkgconfig COMPONENT lib)
 if(WITH_TURBOJPEG)
   install(FILES ${CMAKE_CURRENT_BINARY_DIR}/pkgscripts/libturbojpeg.pc
-    DESTINATION ${CMAKE_INSTALL_LIBDIR}/pkgconfig)
+    DESTINATION ${CMAKE_INSTALL_LIBDIR}/pkgconfig COMPONENT lib)
 endif()
 install(FILES
   ${CMAKE_CURRENT_BINARY_DIR}/pkgscripts/${CMAKE_PROJECT_NAME}Config.cmake
   ${CMAKE_CURRENT_BINARY_DIR}/pkgscripts/${CMAKE_PROJECT_NAME}ConfigVersion.cmake
-  DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake/${CMAKE_PROJECT_NAME})
+  DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake/${CMAKE_PROJECT_NAME}
+  COMPONENT lib)
 install(EXPORT ${CMAKE_PROJECT_NAME}Targets
   NAMESPACE ${CMAKE_PROJECT_NAME}::
-  DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake/${CMAKE_PROJECT_NAME})
+  DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake/${CMAKE_PROJECT_NAME}
+  COMPONENT lib)
 
 install(FILES ${CMAKE_CURRENT_BINARY_DIR}/jconfig.h
   ${CMAKE_CURRENT_SOURCE_DIR}/jerror.h ${CMAKE_CURRENT_SOURCE_DIR}/jmorecfg.h
   ${CMAKE_CURRENT_SOURCE_DIR}/jpeglib.h
-  DESTINATION ${CMAKE_INSTALL_INCLUDEDIR})
+  DESTINATION ${CMAKE_INSTALL_INCLUDEDIR} COMPONENT include)
 
 include(cmakescripts/BuildPackages.cmake)
 
